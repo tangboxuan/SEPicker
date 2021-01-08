@@ -13,6 +13,7 @@ def dict_merger(dict1,dict2):
             if country not in dict1[region]:
                 dict1[region][country] = dict2[region][country]
                 continue
+            # Doesn't matter if we overwrite since the data is the same if they exist in both
             for uni in dict2[region][country]:
                 dict1[region][country][uni] = dict2[region][country][uni]
     return dict1
@@ -35,6 +36,12 @@ def index():
         regions = request.form.getlist("regions")
         countries = request.form.getlist("countries")
         schools = request.form.getlist("schools")
+
+        # Select all regions by default
+        error = ''
+        if not regions+countries+schools:
+            error = 'NOTE: All regions selected by default'
+            regions = ['Americas', 'Asia', 'Europe', 'Oceania', 'Africa']
         
         output_dict = {}
         input_dict = {'Ess_nus_codes': essentialModules, 'Op_nus_codes': optionalModules}
@@ -78,10 +85,10 @@ def index():
             min =  list(set(list_for_n_mods))[0]
             max = min
             if len(list(set(list_for_n_mods))) > 1:
-                max = list(set(list_for_n_mods))[1]
+                max = list(set(list_for_n_mods))[-1]
         # min, max = list(set(list_for_n_mods))[0], list(set(list_for_n_mods))[1]
         return render_template("picker.html", output_dict = output_dict,
-                               list_of_regions=list_of_regions, min=min, max=max)
+                           list_of_regions=list_of_regions, min=min, max=max, error = error)
 
 @app.route('/help')
 def help():
