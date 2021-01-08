@@ -22,15 +22,15 @@ def index():
     if request.method == "GET":
         return render_template("picker.html")
     else: #POST
-        text1 = request.form.get("em")
-        text2 = request.form.get("om")
-        essentialModules = text1.upper().split()
-        optionalModules = text2.upper().split()
-        for module in essentialModules + optionalModules:
-            if len(module) > 8:
-                return render_template("picker.html", error="Module Code Too Long: " + module + "!", text1=text1, text2=text2)
-            if len(module) < 6:
-                return render_template("picker.html", error="Module Code Too Short: " + module + "!", text1=text1, text2=text2)
+        essentialModules = request.form.getlist("em")
+        optionalModules = request.form.getlist("om")
+
+        if not essentialModules+optionalModules:
+            return render_template("picker.html", error="No modules selected!")
+        for i in range(len(essentialModules)):
+            essentialModules[i] = essentialModules[i].split()[0]
+        for i in range(len(optionalModules)):
+            optionalModules[i] = optionalModules[i].split()[0]
 
         regions = request.form.getlist("regions")
         countries = request.form.getlist("countries")
@@ -87,7 +87,7 @@ def index():
             if len(list(set(list_for_n_mods))) > 1:
                 max = list(set(list_for_n_mods))[1]
         # min, max = list(set(list_for_n_mods))[0], list(set(list_for_n_mods))[1]
-        return render_template("picker.html", text1=text1, text2=text2, output_dict = output_dict,
+        return render_template("picker.html", output_dict = output_dict,
                                list_of_regions=list_of_regions, min=min, max=max)
 
 @app.route('/help')
