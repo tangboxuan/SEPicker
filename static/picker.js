@@ -1,15 +1,16 @@
-function toggle(source) {
-    checkboxes = document.getElementsByName('regions');
-    for(var i=0, n=checkboxes.length;i<n;i++) {
-    checkboxes[i].checked = source.checked;
+function toggle() {
+    var checkboxes = document.getElementsByName("regions");
+    console.log("here");
+    for (var i = 0, n = checkboxes.length; i < n; i++) {
+        checkboxes[i].checked = true;
     }
 }
 
-function clearEM(){
-    var textbox = document.getElementById('em');
-    var collection = textbox.getElementsByTagName('option');
+function clearEM() {
+    var textbox = document.getElementById("em");
+    var collection = textbox.getElementsByTagName("option");
 
-    for(var i = 0; i<collection.length; i++){
+    for (var i = 0; i < collection.length; i++) {
         collection[i].selected = false;
     }
 
@@ -17,11 +18,11 @@ function clearEM(){
     text[0].innerHTML = "<span style='color:#999'>Nothing selected</span>";
 }
 
-function clearOM(){
-    var textbox = document.getElementById('om');
-    var collection = textbox.getElementsByTagName('option');
+function clearOM() {
+    var textbox = document.getElementById("om");
+    var collection = textbox.getElementsByTagName("option");
 
-    for(var i = 0; i<collection.length; i++){
+    for (var i = 0; i < collection.length; i++) {
         collection[i].selected = false;
     }
 
@@ -29,26 +30,40 @@ function clearOM(){
     text[1].innerHTML = "<span style='color:#999'>Nothing selected</span>";
 }
 
-function clearCountry(){
-    var textbox = document.getElementById('countries');
-    var collection = textbox.getElementsByTagName('option');
+function clearCountry() {
+    var textbox = document.getElementById("countries");
+    var collection = textbox.getElementsByTagName("option");
 
-    for(var i = 0; i<collection.length; i++){
+    for (var i = 0; i < collection.length; i++) {
         collection[i].selected = false;
     }
 
     var text = document.getElementsByClassName("filter-option-inner-inner");
-    text[2].innerHTML = "<span style='color:#999'>Nothing selected</span>";
+    text[0].innerHTML = "<span style='color:#999'>Nothing selected</span>";
 }
 
-function clearSchool(){
-    var textbox = document.getElementById('schools');
-    var collection = textbox.getElementsByTagName('option');
+function clearSchool() {
+    var textbox = document.getElementById("schools");
+    var collection = textbox.getElementsByTagName("option");
 
-    for(var i = 0; i<collection.length; i++){
+    for (var i = 0; i < collection.length; i++) {
         collection[i].selected = false;
     }
 
     var text = document.getElementsByClassName("filter-option-inner-inner");
-    text[3].innerHTML = "<span style='color:#999'>Nothing selected</span>";
+    text[1].innerHTML = "<span style='color:#999'>Nothing selected</span>";
+}
+
+function onCountryClick(e) {
+    console.log(e.id + "-pus");
+    var pusContainer = document.getElementById(e.id + "-pus");
+    pusContainer.classList.toggle("open");
+}
+
+function closeAlert(e){
+    e.classList.add("closed");
+}
+
+if ( window.history.replaceState ) {
+    window.history.replaceState( null, null, window.location.href );
 }
