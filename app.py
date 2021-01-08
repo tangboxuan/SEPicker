@@ -4,6 +4,14 @@ from static import Algo
 
 app = Flask(__name__)
 
+## To generate dictionary for nus mod code: nus mod title
+nus_code_title_dict = {}
+filename = "static/nus_modules.txt"
+file = open(filename, "r")
+for line in file:
+    mod_title = line.split(">")[1].split("<")[0].split(" ")[1:]
+    nus_code_title_dict[line.split(">")[1].split("<")[0].split(" ")[0]] = " ".join(mod_title)
+
 def dict_merger(dict1,dict2):
     for region in dict2:
         if region not in dict1:
@@ -43,7 +51,7 @@ def index():
         if not regions+countries+schools:
             error = 'NOTE: All regions selected by default'
             regions = ['Americas', 'Asia', 'Europe', 'Oceania', 'Africa']
-        
+
         output_dict = {}
         input_dict = {'Ess_nus_codes': essentialModules, 'Op_nus_codes': optionalModules}
 
@@ -52,19 +60,19 @@ def index():
             input_dict['Location'] = regions
             output_dict1 = Algo.main(input_dict)
             output_dict = dict_merger(output_dict,output_dict1)
-        
+
         if len(countries) > 0:
             input_dict['Location_type'] = 'countries'
             input_dict['Location'] = countries
             output_dict2 = Algo.main(input_dict)
             output_dict = dict_merger(output_dict,output_dict2)
-            
+
         if len(schools) > 0:
             input_dict['Location_type'] = 'universities'
             input_dict['Location'] = schools
             output_dict3 = Algo.main(input_dict)
             output_dict = dict_merger(output_dict,output_dict3)
-        
+
         # To ensure the regions appear in same order in the results
         order_of_regions = ['Americas', 'Asia', 'Europe', 'Oceania', 'Africa']
         list_of_regions = []
@@ -91,14 +99,15 @@ def index():
         # New dictionary removing first layer (regions)
         country_first_dict = {}
         for region in output_dict:
-            country_first_dict.update(output_dict[region])        
+            country_first_dict.update(output_dict[region])
         # min, max = list(set(list_for_n_mods))[0], list(set(list_for_n_mods))[1]
         str_nusmods = {}
         for country in country_first_dict:
             for uni in country_first_dict[country]:
                 str_nusmods[uni] = ', '.join(list(country_first_dict[country][uni].keys())[:-1])
         return render_template("picker.html", output_dict = country_first_dict, str_of_nusmods=str_nusmods,
-                           list_of_regions=list_of_regions, min=min, max=max, error = error)
+                           list_of_regions=list_of_regions, min=min, max=max, error = error,
+                           nus_code_title_dict=nus_code_title_dict)
 
 
 @app.route('/favicon.ico')
@@ -107,5 +116,6 @@ def favicon():
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    # port = int(os.environ.get("PORT", 5000))
+    # app.run(host="0.0.0.0", port=port)
+    app.run(debug=True)
