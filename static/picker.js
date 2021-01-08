@@ -13,8 +13,8 @@ function clearEM(){
         collection[i].selected = false;
     }
 
-    var text = document.getElementsByClassName("filter-option-inner-inner");
-    text[0].innerHTML = "<span style='color:#999'>Nothing selected</span>";
+    var text = document.getElementsByClassName("filter-option-inner-inner")[0];
+    text.innerHTML = "<span style='color:#999'>Nothing selected</span>";
 }
 
 function clearOM(){
@@ -25,8 +25,8 @@ function clearOM(){
         collection[i].selected = false;
     }
 
-    var text = document.getElementsByClassName("filter-option-inner-inner");
-    text[1].innerHTML = "<span style='color:#999'>Nothing selected</span>";
+    var text = document.getElementsByClassName("filter-option-inner-inner")[1];
+    text.innerHTML = "<span style='color:#999'>Nothing selected</span>";
 }
 
 function clearCountry(){
@@ -37,8 +37,8 @@ function clearCountry(){
         collection[i].selected = false;
     }
 
-    var text = document.getElementsByClassName("filter-option-inner-inner");
-    text[2].innerHTML = "<span style='color:#999'>Nothing selected</span>";
+    var text = document.getElementsByClassName("filter-option-inner-inner")[2];
+    text.innerHTML = "<span style='color:#999'>Nothing selected</span>";
 }
 
 function clearSchool(){
@@ -49,6 +49,6 @@ function clearSchool(){
         collection[i].selected = false;
     }
 
-    var text = document.getElementsByClassName("filter-option-inner-inner");
-    text[3].innerHTML = "<span style='color:#999'>Nothing selected</span>";
+    var text = document.getElementsByClassName("filter-option-inner-inner")[3];
+    text.innerHTML = "<span style='color:#999'>Nothing selected</span>";
 }
