@@ -100,9 +100,6 @@ def index():
         return render_template("picker.html", output_dict = country_first_dict, str_of_nusmods=str_nusmods,
                            list_of_regions=list_of_regions, min=min, max=max, error = error)
 
-@app.route('/help')
-def help():
-    return render_template("help.html")
 
 @app.route('/favicon.ico')
 def favicon():

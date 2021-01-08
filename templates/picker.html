@@ -22,25 +22,20 @@
 
         <link href="static/style.css" rel="stylesheet" type="text/css" />
 
-        <title>SEPickers, tool to aid NUS SEP Module Mappings</title>
+        <title>SEPicker</title>
     </head>
 
     <body>
-        <script>
-    if ( window.history.replaceState ) {
-        window.history.replaceState( null, null, window.location.href );
-    }
-</script>
         <div class="navigation">
             <nav class="navigation__nav">
                 <div class="navigation__name">
                     <i class="fas fa-globe-asia"></i>
                     SEPicker
                 </div>
-                <div class="navigation__list">
-                    <a href="#" class="navigation__link">Picker</a>
-                    <a href="#" class="navigation__link">Favourites</a>
-                </div>
+                <!-- <div class="navigation__list">
+                    <a href="/picker" class="navigation__link">Picker</a>
+                    <a href="/fav" class="navigation__link" disabled>Favourites</a>
+                </div> -->
             </nav>
         </div>
         {% if error %}
@@ -324,7 +319,11 @@
                 </div>
                 {% endfor %}
             </div>
-
+            <script>
+              if ( window.history.replaceState ) {
+                  window.history.replaceState( null, null, window.location.href );
+              }
+          </script>
             <script
                 src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
