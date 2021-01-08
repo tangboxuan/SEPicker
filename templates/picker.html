@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    SEPicker
+{% endblock %}
+
+{% block main %}
+    <h1>SEPicker</h1>
+    <h6>A tool to help NUS undergraduates choose the SEP school that allows for most module mappings!</h6>
+    <form action="/" method="post">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"><span class="input-group-text">Essential Modules:</span></div>
+            <input name="em" type="text" class="form-control" placeholder="Separated by Space" aria-label="Essential Modules to be mapped" value="{{text1}}">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"><span class="input-group-text">Optional Modules:</span></div>
+            <input name="om" type="text" class="form-control" placeholder="Separated by Space" aria-label="Optional Modules to be mapped" value="{{text2}}">
+        </div>
+
+        {% include "regions.html" %}
+        {% include "countries.html" %}
+        {% include "schools.html" %}
+
+        <button class="btn btn-primary" type="submit">Calculate</button>
+    </form>
+    <p></p>
+    {{ error }}
+
+
+    {% for region in list_of_regions %}
+      <button type="button" class="btn btn-outline-dark" data-toggle="collapse" data-target="#{{region}}">{{ region }}</button>
+      <div id= "{{region}}" class="collapse">
+        {% for country in output_dict[region] %}
+          <h5>{{country}}</h5>
+          {% for i in range(max, min-1, -1) %}
+            {% for uni in output_dict[region][country] %}
+              {% if output_dict[region][country][uni]["n_mods"] == i %}
+                <strong>{{uni}}</strong>
+                <br>
+                {% for nusmod in output_dict[region][country][uni] %}
+                  {% if nusmod != "n_mods" %}
+                    <strong>{{nusmod}}:</strong>
+                    <br>
+                    <h6>PU Module Title: {{output_dict[region][country][uni][nusmod]['PU Module Title']}}</h6>
+                    <h6>PU Module Code: {{output_dict[region][country][uni][nusmod]['PU Module Code']}}</h6>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+
+
+    <!-- {{ output_dict }} -->
+    <script src="static/picker.js"></script>
+{% endblock %}
