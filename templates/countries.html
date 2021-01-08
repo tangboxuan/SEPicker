@@ -1,6 +1,6 @@
 <div class="input-group mb-3">
     <div class="input-group-prepend"><span class="input-group-text">Countries:</span></div>
-    <select class="selectpicker form-control" multiple data-live-search="true" name="countries">
+    <select class="selectpicker form-control" multiple data-live-search="true" name="countries" id="countries">
         <option>Australia</option>
         <option>Austria</option>
         <option>Belgium</option>
@@ -46,4 +46,12 @@
         <option>Uruguay</option>
         <option data-tokens="usa">United States of America</option>
     </select>
+    <div class="input-group-append">
+        <label class="form-check-label" for="country_clear" style="cursor:pointer">
+            <span class="input-group-text">
+                <input class="form-check-input" type="checkbox" id="country_clear" onClick="clearCountry()" style="opacity:0">
+                Clear
+            </span>
+        </label>
+      </div>
 </div>

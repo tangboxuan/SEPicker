@@ -8,17 +8,33 @@
     <h1>SEPicker</h1>
     <h6>A tool to help NUS undergraduates choose the SEP school that allows for most module mappings!</h6>
     <form action="/" method="post">
-        <div class="input-group mb-3">
+        <div class="input-group mb-3" name="em_group">
           <div class="input-group-prepend"><span class="input-group-text">Essential Modules:</span></div>
-          <select class="selectpicker form-control" multiple data-live-search="true" name="em">
+          <select class="selectpicker form-control" multiple data-live-search="true" name="em" id="em">
             {% include "modules.html" %}
           </select>
+          <div class="input-group-append">
+            <label class="form-check-label" for="em_clear" style="cursor:pointer">
+                <span class="input-group-text">
+                    <input class="form-check-input" type="checkbox" id="em_clear" onClick="clearEM()" style="opacity:0">
+                    Clear
+                </span>
+            </label>
+          </div>
         </div>
         <div class="input-group mb-3">
           <div class="input-group-prepend"><span class="input-group-text">Optional Modules:</span></div>
-          <select class="selectpicker form-control" multiple data-live-search="true" name="om">
+          <select class="selectpicker form-control" multiple data-live-search="true" name="om" id="om">
             {% include "modules.html" %}
           </select>
+          <div class="input-group-append">
+            <label class="form-check-label" for="om_clear" style="cursor:pointer">
+                <span class="input-group-text">
+                    <input class="form-check-input" type="checkbox" id="om_clear" onClick="clearOM()" style="opacity:0">
+                    Clear
+                </span>
+            </label>
+          </div>
         </div>
 
         {% include "regions.html" %}
