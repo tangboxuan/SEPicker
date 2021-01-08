@@ -16,24 +16,11 @@ def repeated_mods_finder(lst):
     n = len(lst)
     for i in range(n):
         try:
-            if lst[i][:6] == 'CS1010':
+            if lst[i][:6] == 'CS1101':
                 lst[i] = 'CS1010'
-            elif lst[i][:6] == 'CS1231':
-                lst[i] = 'CS1231'
-            elif lst[i][:6] == 'CS2040':
-                lst[i] = 'CS2040'
-            elif lst[i][:6] == 'CS2030':
-                lst[i] = 'CS2030'
-            elif lst[i][:6] == 'CS1101':
-                lst[i] = 'CS1010'
-            elif lst[i][:7] == 'ACC1002':
-                lst[i] = 'ACC1002'
-            elif lst[i][:7] == 'ACC1701':
-                lst[i] = 'ACC1701'
-            elif lst[i][:6] == 'CS2103':
-                lst[i] = 'CS2103'
-            elif lst[i][:7] == 'FIN2004':
-                lst[i] = 'FIN2004'
+            # Module codes ending in letters (excluding R) are equivalent
+            elif (lst[i][:2] == 'CS') and (lst[i][-1] not in '1234567890R'):
+                lst[i] = lst[i][:-1]
             elif (lst[i][:3] in ['LSM','BSP','ACC','FIN']) and (lst[i][-1] not in '1234567890'):
                 lst[i] = lst[i][:-1]
         except:
@@ -77,16 +64,13 @@ def optional_mods_finder(restricted_unis,mods):
 countries = unique(uni_mappings['Country'])
 continents = unique(uni_mappings['Continent'])
 
-english_speaking = []
-for i in range(len(uni_mappings)):
-    if uni_mappings.iloc[i]['English-speaking']:
-        english_speaking.append(uni_mappings.iloc[i]['University'])
-
 uni_mods = {}
 for uni in uni_mappings['University']:
     rows = module_mappings.loc[module_mappings['Partner University'] == uni]
     mods = unique(rows['NUS Module 1'].append(rows['NUS Module 2']))
     mods.remove(np.nan)
+
+    # Unis listed under "University of California" are common between all UCs
     if uni[:24] == 'University of California':
         rows1 = module_mappings.loc[module_mappings['Partner University'] == 'University of California']
         for mod in unique(rows1['NUS Module 1'].append(rows1['NUS Module 2'])):
@@ -111,11 +95,12 @@ def main(input_dict):
     unis_with_optionals = optional_mods_finder(unis_with_essentials,parsed['Op_nus_codes'])
     output = {}
     for uni in unis_with_optionals:
-        region = uni_mappings.loc[uni_mappings['University'] == uni]['Continent'].iloc[0]
+        uni_row = uni_mappings.loc[uni_mappings['University'] == uni]
+        region = uni_row['Continent'].iloc[0]
         if region not in output:
             output[region] = {}
 
-        country = uni_mappings.loc[uni_mappings['University'] == uni]['Country'].iloc[0]
+        country = uni_row['Country'].iloc[0]
         if country not in output[region]:
             output[region][country] = {}
 

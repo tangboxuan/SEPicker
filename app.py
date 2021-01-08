@@ -13,7 +13,7 @@ def dict_merger(dict1,dict2):
             if country not in dict1[region]:
                 dict1[region][country] = dict2[region][country]
                 continue
-            for uni in dict1[region][country]:
+            for uni in dict2[region][country]:
                 dict1[region][country][uni] = dict2[region][country][uni]
     return dict1
 
@@ -37,31 +37,24 @@ def index():
         schools = request.form.getlist("schools")
         
         output_dict = {}
+        input_dict = {'Ess_nus_codes': essentialModules, 'Op_nus_codes': optionalModules}
+
         if len(regions) > 0:
-            input_dict1 = {}
-            input_dict1['Location_type'] = 'regions'
-            input_dict1['Location'] = regions
-            input_dict1['Ess_nus_codes'] = essentialModules
-            input_dict1['Op_nus_codes'] = optionalModules
-            output_dict1 = Algo.main(input_dict1)
+            input_dict['Location_type'] = 'regions'
+            input_dict['Location'] = regions
+            output_dict1 = Algo.main(input_dict)
             output_dict = dict_merger(output_dict,output_dict1)
         
         if len(countries) > 0:
-            input_dict2 = {}
-            input_dict2['Location_type'] = 'countries'
-            input_dict2['Location'] = countries
-            input_dict2['Ess_nus_codes'] = essentialModules
-            input_dict2['Op_nus_codes'] = optionalModules
-            output_dict2 = Algo.main(input_dict2)
+            input_dict['Location_type'] = 'countries'
+            input_dict['Location'] = countries
+            output_dict2 = Algo.main(input_dict)
             output_dict = dict_merger(output_dict,output_dict2)
             
         if len(schools) > 0:
-            input_dict3 = {}
-            input_dict3['Location_type'] = 'universities'
-            input_dict3['Location'] = schools
-            input_dict3['Ess_nus_codes'] = essentialModules
-            input_dict3['Op_nus_codes'] = optionalModules
-            output_dict3 = Algo.main(input_dict3)
+            input_dict['Location_type'] = 'universities'
+            input_dict['Location'] = schools
+            output_dict3 = Algo.main(input_dict)
             output_dict = dict_merger(output_dict,output_dict3)
         
         # To ensure the regions appear in same order in the results
