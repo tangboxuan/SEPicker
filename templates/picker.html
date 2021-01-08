@@ -247,6 +247,7 @@
                         onClick="onCountryClick(this)"
                         class="country-item__title"
                         id="{{''.join(country.split()).lower()}}"
+                        style="cursor: pointer;"
                     >
                         <span class="heading-primary">{{country}}</span>
                     </div>
@@ -262,6 +263,7 @@
                                 class="pu-item__title"
                                 data-toggle="collapse"
                                 data-target="{{'#' + ''.join(uni.split()).lower()}}"
+                                style="cursor: pointer;"
                             >
                                 <span class="heading-primary smaller"
                                     >{{uni}}</span
