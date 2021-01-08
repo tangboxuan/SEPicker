@@ -22,7 +22,7 @@ def dict_merger(dict1,dict2):
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "GET":
-        return render_template("picker.html")
+        return render_template("picker.html", is_get=True)
     else: #POST
         essentialModules = request.form.getlist("em")
         optionalModules = request.form.getlist("om")
@@ -87,8 +87,17 @@ def index():
             max = min
             if len(list(set(list_for_n_mods))) > 1:
                 max = list(set(list_for_n_mods))[-1]
+
+        # New dictionary removing first layer (regions)
+        country_first_dict = {}
+        for region in output_dict:
+            country_first_dict.update(output_dict[region])        
         # min, max = list(set(list_for_n_mods))[0], list(set(list_for_n_mods))[1]
-        return render_template("picker.html", output_dict = output_dict,
+        str_nusmods = {}
+        for country in country_first_dict:
+            for uni in country_first_dict[country]:
+                str_nusmods[uni] = ', '.join(list(country_first_dict[country][uni].keys())[:-1])
+        return render_template("picker.html", output_dict = country_first_dict, str_of_nusmods=str_nusmods,
                            list_of_regions=list_of_regions, min=min, max=max, error = error)
 
 @app.route('/help')
@@ -101,7 +110,7 @@ def favicon():
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__ == "__main__":
-    app.debug = True
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
-    # app.run(debug=True)
+    # app.debug = True
+    # port = int(os.environ.get("PORT", 5000))
+    # app.run(host="0.0.0.0", port=port)
+    app.run(debug=True)
