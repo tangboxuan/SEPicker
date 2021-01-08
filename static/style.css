@@ -275,3 +275,11 @@ body {
 .inline-btn{
     display:inline;
 }
+
+footer
+{
+  position:fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
