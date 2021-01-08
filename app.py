@@ -16,6 +16,7 @@ def dict_merger(dict1,dict2):
             # Doesn't matter if we overwrite since the data is the same if they exist in both
             for uni in dict2[region][country]:
                 dict1[region][country][uni] = dict2[region][country][uni]
+
     return dict1
 
 @app.route("/", methods=["GET", "POST"])

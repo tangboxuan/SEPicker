@@ -130,5 +130,20 @@ def main(input_dict):
                 output[region][country][uni][module] = {'PU Module Title': PU_Title, 'PU Module Code': PU_Code}
             except:
                 pass
+
         output[region][country][uni]['n_mods'] = len(output[region][country][uni])
+
+    # For the edge case when no essential modules are selected
+    for region in output:
+        if len(output[region]) == 0:
+            del output[region]
+            continue
+        for country in output[region]:
+            if len(output[region][country]) == 0:
+                del output[region][country]
+                continue
+            for uni in output[region][country]:
+                if len(output[region][country][uni]) == 0:
+                    del output[region][country][uni]
+
     return output
