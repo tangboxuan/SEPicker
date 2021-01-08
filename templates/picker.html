@@ -68,14 +68,30 @@
                                             class="form-group-text font-sz-mid"
                                             >Essential Modules:</span
                                         >
+                                        <button
+            class="btn-tertiary margin-bottom-sm"
+            type="button"
+            onClick="clearEM()"
+        >
+            <span class="form-group-text">
+                Clear
+            </span>
+        </button>
                                     </div>
-                                    <input
+                                    <!-- <input
                                         name="em"
                                         type="text"
                                         class="form-control form-control-lg"
                                         aria-label="Essential Modules to be mapped"
                                         value=""
-                                    />
+                                    /> -->
+                                    <select
+                                    class="selectpicker form-control form-control-lg font-sz-mid"
+                                    multiple
+                                    data-live-search="true"
+                                    name="em" id="em">
+                                    {%include "modules.html"%}
+                                  </select>
                                 </div>
                             </div>
                             <div class="col">
@@ -85,14 +101,30 @@
                                             class="form-group-text font-sz-mid"
                                             >Optional Modules:</span
                                         >
+                                        <button
+            class="btn-tertiary margin-bottom-sm"
+            type="button"
+            onClick="clearOM()"
+        >
+            <span class="form-group-text">
+                Clear
+            </span>
+        </button>
                                     </div>
-                                    <input
+                                    <!-- <input
                                         name="om"
                                         type="text"
                                         class="form-control form-control-lg font-sz-mid"
                                         aria-label="Optional Modules to be mapped"
                                         value=""
-                                    />
+                                    /> -->
+                                    <select
+                                      class="selectpicker form-control form-control-lg font-sz-mid"
+                                      multiple
+                                      data-live-search="true"
+                                      name="om" id="om">
+                                      {%include "modules.html"%}
+                                    </select>
                                 </div>
                             </div>
                         </div>

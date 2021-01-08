@@ -38,13 +38,8 @@ function clearCountry() {
         collection[i].selected = false;
     }
 
-<<<<<<< HEAD
-    var text = document.getElementsByClassName("filter-option-inner-inner");
-    text[0].innerHTML = "<span style='color:#999'>Nothing selected</span>";
-=======
     var text = document.getElementsByClassName("filter-option-inner-inner")[2];
     text.innerHTML = "<span style='color:#999'>Nothing selected</span>";
->>>>>>> 177334598555e6d4d63b181ea2bd8cdb49a63f3d
 }
 
 function clearSchool() {
@@ -55,9 +50,8 @@ function clearSchool() {
         collection[i].selected = false;
     }
 
-<<<<<<< HEAD
-    var text = document.getElementsByClassName("filter-option-inner-inner");
-    text[1].innerHTML = "<span style='color:#999'>Nothing selected</span>";
+    var text = document.getElementsByClassName("filter-option-inner-inner")[3];
+    text.innerHTML = "<span style='color:#999'>Nothing selected</span>";
 }
 
 function onCountryClick(e) {
@@ -70,11 +64,3 @@ function closeAlert(e){
     e.classList.add("closed");
 }
 
-if ( window.history.replaceState ) {
-    window.history.replaceState( null, null, window.location.href );
-}
-=======
-    var text = document.getElementsByClassName("filter-option-inner-inner")[3];
-    text.innerHTML = "<span style='color:#999'>Nothing selected</span>";
-}
->>>>>>> 177334598555e6d4d63b181ea2bd8cdb49a63f3d
