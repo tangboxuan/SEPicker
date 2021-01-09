@@ -290,9 +290,9 @@ footer
 }
 
 select:active, select:hover {
-    background-color: #999 !important;
+    background-color: rgb(248,249,250) !important;
   }
 
 li.selected {
-background-color: #999 !important;
+background-color: rgb(248,249,250) !important;
 }
