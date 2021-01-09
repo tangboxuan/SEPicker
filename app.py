@@ -145,7 +145,7 @@ def sub_search():
     selected_countries = []
     selected_schools = []
     if request.method == "GET":
-        return render_template("picker.html", is_get=True, selected_regions=selected_regions,
+        return render_template("picker_sub_search.html", is_get=True, selected_regions=selected_regions,
                                order_of_regions=order_of_regions, nus_code_title_dict=nus_code_title_dict,
                                essentialModules=essentialModules,optionalModules=optionalModules,
                                selected_countries=selected_countries,list_of_countries=list_of_countries,
@@ -223,7 +223,7 @@ def sub_search():
         for country in country_first_dict:
             for uni in country_first_dict[country]:
                 str_nusmods[uni] = ', '.join(list(country_first_dict[country][uni].keys())[:-1])
-        return render_template("picker.html", output_dict = country_first_dict, str_of_nusmods=str_nusmods,
+        return render_template("picker_sub_search.html", output_dict = country_first_dict, str_of_nusmods=str_nusmods,
                                 order_of_regions=order_of_regions, selected_regions=selected_regions,
                                 min=min, max=max, error = error,nus_code_title_dict=nus_code_title_dict,
                                 essentialModules=essentialModules,optionalModules=optionalModules,
