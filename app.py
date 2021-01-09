@@ -231,7 +231,9 @@ def sub_search():
                                 selected_schools=selected_schools,list_of_schools=list_of_schools)
 
 
-
+@app.route('/department')
+def department():
+    return render_template("department.html")
 
 
 @app.route('/favicon.ico')
