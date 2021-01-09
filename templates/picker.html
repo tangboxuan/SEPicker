@@ -1,97 +1,93 @@
-{% extends "layout.html" %}
-
-{% block title %}
-    SEPicker
-{% endblock %}
-
-{% block main %}
-        {% if error %}
-        <div class="my-alert danger" onClick="closeAlert(this)">
-            {{ error }}. Click banner to dismiss.
-        </div>
-        {% endif %}
-        <div class="dashboard">
-            <!-- when the form is "open" add a "open" class -->
-            <div class="search-form-container">
-                <!-- when the form is "open" add a "open" class -->
-                <div
-                    class="{{ 'search-form-collaspsible collapse ' + ('show' if is_get else '')}}"
-                    id="search-form-top"
-                >
-                    <div class="search-form-title margin-bottom-med">
-                        <span class="heading-primary">Picker</span>
-                    </div>
-                    <form action="/" method="post">
-                        <div class="form-row">
-                            <div class="col">
-                                <div class="form-group margin-bottom-med">
-                                    <div class="form-group-prepend">
-                                        <span
-                                            class="form-group-text font-sz-mid"
-                                            >Essential Modules:</span
-                                        >
-                                        <button
-            class="btn-tertiary margin-bottom-sm"
-            type="button"
-            onClick="clearEM()"
+{% extends "layout.html" %} {% block title %} SEPicker {% endblock %} {% block
+main %} {% if error %}
+<div class="my-alert danger" onClick="closeAlert(this)">
+    {{ error }}. Click banner to dismiss.
+</div>
+{% endif %}
+<div class="dashboard">
+    <!-- when the form is "open" add a "open" class -->
+    <div class="search-form-container">
+        <!-- when the form is "open" add a "open" class -->
+        <div
+            class="{{ 'search-form-collaspsible collapse ' + ('show' if is_get else '')}}"
+            id="search-form-top"
         >
-            <span class="form-group-text">
-                Clear
-            </span>
-        </button>
-                                    </div>
-                                    <!-- <input
+            <div class="search-form-title margin-bottom-med">
+                <span class="heading-primary">Picker</span>
+            </div>
+            <form action="/" method="post">
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group margin-bottom-med">
+                            <div class="form-group-prepend">
+                                <span class="form-group-text font-sz-mid"
+                                    >Essential Modules:</span
+                                >
+                                <button
+                                    class="btn-tertiary margin-bottom-sm"
+                                    type="button"
+                                    onClick="clearEM()"
+                                >
+                                    <span class="form-group-text">
+                                        Clear
+                                    </span>
+                                </button>
+                            </div>
+                            <!-- <input
                                         name="em"
                                         type="text"
                                         class="form-control form-control-lg"
                                         aria-label="Essential Modules to be mapped"
                                         value=""
                                     /> -->
-                                    <select
-                                    class="selectpicker form-control form-control-lg font-sz-mid"
-                                    multiple
-                                    data-live-search="true"
-                                    name="em" id="em">
-                                    {%include "modules_em.html"%}
-                                  </select>
-                                </div>
+                            <select
+                                class="selectpicker form-control form-control-lg font-sz-mid"
+                                multiple
+                                data-live-search="true"
+                                name="em"
+                                id="em"
+                            >
+                                {%include "modules_em.html"%}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group margin-bottom-med">
+                            <div class="form-group-prepend">
+                                <span class="form-group-text font-sz-mid"
+                                    >Optional Modules:</span
+                                >
+                                <button
+                                    class="btn-tertiary margin-bottom-sm"
+                                    type="button"
+                                    onClick="clearOM()"
+                                >
+                                    <span class="form-group-text">
+                                        Clear
+                                    </span>
+                                </button>
                             </div>
-                            <div class="col">
-                                <div class="form-group margin-bottom-med">
-                                    <div class="form-group-prepend">
-                                        <span
-                                            class="form-group-text font-sz-mid"
-                                            >Optional Modules:</span
-                                        >
-                                        <button
-            class="btn-tertiary margin-bottom-sm"
-            type="button"
-            onClick="clearOM()"
-        >
-            <span class="form-group-text">
-                Clear
-            </span>
-        </button>
-                                    </div>
-                                    <!-- <input
+                            <!-- <input
                                         name="om"
                                         type="text"
                                         class="form-control form-control-lg font-sz-mid"
                                         aria-label="Optional Modules to be mapped"
                                         value=""
                                     /> -->
-                                    <select
-                                      class="selectpicker form-control form-control-lg font-sz-mid"
-                                      multiple
-                                      data-live-search="true"
-                                      name="om" id="om">
-                                      {%include "modules_om.html"%}
-                                    </select>
-                                </div>
-                            </div>
+                            <select
+                                class="selectpicker form-control form-control-lg font-sz-mid"
+                                multiple
+                                data-live-search="true"
+                                name="om"
+                                id="om"
+                            >
+                                {%include "modules_om.html"%}
+                            </select>
                         </div>
-                        {% include "regions2.html" %}
-                        <!-- <div class="form-group margin-bottom-med">
+                    </div>
+                </div>
+                {% include "regions2.html" %}
+                <!-- <div class="form-group margin-bottom-med">
                             <div class="form-group-prepend">
                                 <span class="form-group-text font-sz-mid"
                                     >Regions:</span
@@ -138,9 +134,9 @@
                                 </span>
                             </button>
                         </div> -->
-                        {% include "countries2.html" %}
-                        <!-- Countries -->
-                        <!-- <div class="form-group margin-bottom-med">
+                {% include "countries2.html" %}
+                <!-- Countries -->
+                <!-- <div class="form-group margin-bottom-med">
                             <div class="form-group-prepend">
                                 <span class="form-group-text font-sz-mid"
                                     >Countries:</span
@@ -157,9 +153,9 @@
                             </select>
                         </div> -->
 
-                        <!-- schools -->
-                        {% include "schools2.html" %}
-                        <!-- <div class="form-group margin-bottom-med">
+                <!-- schools -->
+                {% include "schools2.html" %}
+                <!-- <div class="form-group margin-bottom-med">
                             <div class="form-group-prepend">
                                 <span class="form-group-text font-sz-mid"
                                     >Schools:</span
@@ -186,109 +182,107 @@
                             </select>
                         </div> -->
 
-                        <button
-                            class="btn-primary margin-top-med"
-                            type="submit"
-                        >
-                            Calculate
-                        </button>
-                    </form>
-                </div>
+                <button class="btn-primary margin-top-med" type="submit">
+                    Calculate
+                </button>
+            </form>
+        </div>
 
-                <!-- when the form is "open" add a "open" class -->
-                <div
-                    class="btn-collaspsible__up"
-                    data-toggle="collapse"
-                    data-target="#search-form-top"
-                >
-                    <i class="fas fa-arrows-alt-v"></i>
-                </div>
+        <!-- when the form is "open" add a "open" class -->
+        <div
+            class="btn-collaspsible__up"
+            data-toggle="collapse"
+            data-target="#search-form-top"
+        >
+            <i class="fas fa-arrows-alt-v"></i>
+        </div>
+    </div>
+
+    <!-- main container -->
+    <div class="main-container">
+        {%for country in output_dict%}
+        <div class="country-item ">
+            <div
+                onClick="onCountryClick(this)"
+                class="country-item__title"
+                id="{{''.join(country.split()).lower()}}"
+                style="cursor: pointer;"
+            >
+                <span class="heading-primary">{{country}}</span>
             </div>
+            <div
+                class="pus-container"
+                id="{{''.join(country.split()).lower() + '-pus'}}"
+            >
+                {% for i in range(max, min-1, -1) %} {% for uni in
+                output_dict[country] %} {% if
+                output_dict[country][uni]["n_mods"] == i %}
 
-
-            <!-- main container -->
-            <div class="main-container">
-                {%for country in output_dict%}
-                <div class="country-item ">
+                <div class="pu-item">
                     <div
-                        onClick="onCountryClick(this)"
-                        class="country-item__title"
-                        id="{{''.join(country.split()).lower()}}"
+                        class="pu-item__title"
+                        data-toggle="collapse"
+                        data-target="{{'#' + ''.join(uni.split()).lower()}}"
                         style="cursor: pointer;"
                     >
-                        <span class="heading-primary">{{country}}</span>
+                        <span class="heading-primary smaller">{{uni}}</span
+                        ><span class="badge badge-secondary badge-primary"
+                            >{{output_dict[country][uni]["n_mods"]}}</span
+                        >
                     </div>
-                    {% for i in range(max, min-1, -1) %} 
-                    {% for uni in output_dict[country] %} 
-                    {% if output_dict[country][uni]["n_mods"] == i %}
-                    <div
-                        class="pus-container"
-                        id="{{''.join(country.split()).lower() + '-pus'}}"
-                    >
-                        <div class="pu-item">
-                            <div
-                                class="pu-item__title"
-                                data-toggle="collapse"
-                                data-target="{{'#' + ''.join(uni.split()).lower()}}"
-                                style="cursor: pointer;"
-                            >
-                                <span class="heading-primary smaller"
-                                    >{{uni}}</span
-                                ><span
-                                    class="badge badge-secondary badge-primary"
-                                    >{{output_dict[country][uni]["n_mods"]}}</span
-                                >
-                            </div>
 
-                            <div
-                                class="pu-item__sm-modules-container collaspe show"
-                                id="{{''.join(uni.split()).lower()}}"
-                            >
-                                <!-- could be sus -->
-                                {{str_of_nusmods[uni]}}
-                            </div>
-                            <div
-                                class="pu-item__mappings collapse"
-                                id="{{''.join(uni.split()).lower()}}"
-                            >
-                                <table class="table ">
-                                    <thead>
-                                        <tr>
-                                            <th style="width: 50%">NUS</th>
-                                            <th style="width: 50%">
-                                                Partner University
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {% for nusmod in
-                                        output_dict[country][uni] %} {% if
-                                        nusmod != "n_mods" %}
-                                        <tr>
-                                            <td class="hello-world">
-                                                {{nusmod.upper()}}<br /><span
-                                                    class="description"
-                                                    >{{nus_code_title_dict[nusmod]}}
-                                                </span>
-                                            </td>
-                                            <td>
-                                                {{output_dict[country][uni][nusmod]["PU Module Code"]}}<br />
-                                                <span class="description"
-                                                    >{{output_dict[country][uni][nusmod]["PU Module Title"]}}
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        {% endif %}{% endfor %}
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                    <div
+                        class="pu-item__sm-modules-container collaspe show"
+                        id="{{''.join(uni.split()).lower()}}"
+                    >
+                        <!-- could be sus -->
+                        {{str_of_nusmods[uni]}}
+                        <i
+                                    class="fas fa-star"
+                                    onClick="togglePlan({{output_dict[country][uni]}},'{{uni}}',this)"
+                                ></i>
                     </div>
-                    {% endif %} 
-                    {% endfor %} 
-                    {% endfor %}
+                    <div
+                        class="pu-item__mappings collapse"
+                        id="{{''.join(uni.split()).lower()}}"
+                    >
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <th style="width: 50%">NUS</th>
+                                    <th style="width: 50%">
+                                        Partner University
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for nusmod in output_dict[country][uni] %} {%
+                                if nusmod != "n_mods" %}
+                                <tr>
+                                    <td class="hello-world">
+                                        {{nusmod.upper()}}<br /><span
+                                            class="description"
+                                            >{{nus_code_title_dict[nusmod]}}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        {{output_dict[country][uni][nusmod]["PU Module Code"]}}<br />
+                                        <span class="description"
+                                            >{{output_dict[country][uni][nusmod]["PU Module Title"].title()}}
+                                        </span>
+                                    </td>
+                                </tr>
+                                {% endif %}{% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                {% endfor %}
+
+                {% endif %} {% endfor %} {% endfor %}
             </div>
-            <script src="static/picker.js"></script>
-{% endblock %}
+        </div>
+        {% endfor %}
+    </div>
+    <script src="static/picker.js"></script>
+    {% endblock %}
+</div>

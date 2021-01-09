@@ -283,3 +283,8 @@ footer
   width: 100%;
   bottom: 0;
 }
+
+/* added */
+.fa-star.selected{
+    color: #5cbdff;
+}
