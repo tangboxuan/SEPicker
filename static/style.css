@@ -290,5 +290,9 @@ footer
 }
 
 select:active, select:hover {
-    outline-color: blue !important
+    background-color: #999 !important;
   }
+
+li.selected {
+background-color: #999 !important;
+}
