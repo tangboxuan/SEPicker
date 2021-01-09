@@ -288,3 +288,7 @@ footer
 .fa-star.selected{
     color: #5cbdff;
 }
+
+select:active, select:hover {
+    outline-color: blue !important
+  }
