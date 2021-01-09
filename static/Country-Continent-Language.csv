@@ -1,0 +1,338 @@
+University,Country,Continent,English-speaking
+The University of Western Australia,Australia,Oceania,1
+The University of Sydney,Australia,Oceania,1
+The University of New South Wales,Australia,Oceania,1
+Monash University,Australia,Oceania,1
+The University of Adelaide,Australia,Oceania,1
+The Australian National University,Australia,Oceania,1
+Victoria University,Australia,Oceania,1
+La Trobe University,Australia,Oceania,1
+The University of Auckland,Australia,Oceania,1
+The University of Queensland,Australia,Oceania,1
+University of Newcastle,Australia,Oceania,1
+The University of Melbourne,Australia,Oceania,1
+LaTrobe University,Australia,Oceania,1
+University of Antwerp,Austria,Europe,
+University of Innsbruck,Austria,Europe,
+Vienna University of Economics and Business,Austria,Europe,
+Mannheim Business School,Austria,Europe,
+Management Center Innsbruck,Austria,Europe,
+Universite Catholique De Louvain,Belgium,Europe,
+"University of Brussels, Solvay Business School",Belgium,Europe,
+Free University of Brussels,Belgium,Europe,
+Universite Catholique de Louvain,Belgium,Europe,
+University of Waterloo,Canada,Americas,1
+University of Toronto,Canada,Americas,1
+University of Ottawa,Canada,Americas,1
+McGill University,Canada,Americas,1
+University of Calgary,Canada,Americas,1
+Concordia University,Canada,Americas,1
+The University of British Columbia,Canada,Americas,1
+University of Alberta,Canada,Americas,1
+HEC Montreal,Canada,Americas,1
+The University of British Columbia (Okanagan),Canada,Americas,1
+York University,Canada,Americas,1
+Western University,Canada,Americas,1
+"University of Victoria, British Columbia",Canada,Americas,1
+Simon Fraser University,Canada,Americas,1
+Queen's University at Kingston,Canada,Americas,1
+McMaster University,Canada,Americas,1
+University of Guelph,Canada,Americas,1
+"Richard Ivey Sch of Biz, Univ of Western Ontario",Canada,Americas,1
+Dalhousie University,Canada,Americas,1
+NOC Toronto,Canada,Americas,1
+University of Toronto (Mississauga),Canada,Americas,1
+Peking University,China,Asia,
+Nanjing University,China,Asia,
+Shanghai Jiao Tong University,China,Asia,
+Fudan University,China,Asia,
+Minzu University of China,China,Asia,
+Tianjin University of Finance and Economics,China,Asia,
+Beihang University,China,Asia,
+Central University of Finance & Economics,China,Asia,
+Nankai University,China,Asia,
+Xi'an Jiaotong University,China,Asia,
+Zhejiang University,China,Asia,
+Sun Yat Sen University,China,Asia,
+Tsinghua University,China,Asia,
+Renmin University of China,China,Asia,
+Tongji University,China,Asia,
+Chongqing University,China,Asia,
+Tianjin University,China,Asia,
+Suzhou University,China,Asia,
+Xiamen University,China,Asia,
+NOC Shanghai,China,Asia,
+NOC Beijing,China,Asia,
+NOC Shenzhen,China,Asia,
+University of Zagreb,Croatia,Europe,
+Charles University in Prague,Czech Republic,Europe,
+Czech Technical University,Czech Republic,Europe,
+University of Copenhagen,Denmark,Europe,
+Aarhus School of Business,Denmark,Europe,
+Copenhagen Business School,Denmark,Europe,
+Technical University of Denmark,Denmark,Europe,
+University of Southern Denmark - Odense University,Denmark,Europe,
+Aarhus University,Denmark,Europe,
+Tallinn University of Technology,Estonia,Europe,
+Tampere University of Technology,Finland,Europe,
+Oulu University,Finland,Europe,
+"Aalto University, Helsinki",Finland,Europe,
+"Aalto University, Mikkeli",Finland,Europe,
+University of Helsinki,Finland,Europe,
+Aalto University,Finland,Europe,
+Institut d'Etudes Politiques de Grenoble,France,Europe,
+University of Technology of Compiegne,France,Europe,
+University of Bordeaux,France,Europe,
+Sciences Po,France,Europe,
+Hautes Etudes Commerciales (HEC) Paris,France,Europe,
+"Ecole Speciale D'Architecture, Paris",France,Europe,
+CentraleSupelec - Ecole Centrale Paris,France,Europe,
+Grenoble Institute of Technology (Grenoble INP),France,Europe,
+University of Technology of Troyes,France,Europe,
+"Ecole Centrale Des Arts Et Manufactures, Paris",France,Europe,
+Hamburg University of Technology (TUHH),Germany,Europe,
+University of Konstanz,Germany,Europe,
+University of Applied Sciences Esslingen,Germany,Europe,
+University of Mannheim,Germany,Europe,
+Technical University of Munich,Germany,Europe,
+Karlsruhe Institute of Technology,Germany,Europe,
+"University of Kaiserslautern, FRG",Germany,Europe,
+Heidelberg University (Rupr-Karls-Uni Heidelberg),Germany,Europe,
+Free University of Berlin,Germany,Europe,
+Technical University of Darmstadt,Germany,Europe,
+Rheinisch Friedrich-Wilhelms University of Bonn,Germany,Europe,
+Ludwig-Maximilians-University of Munich,Germany,Europe,
+Bremen University of Applied Sciences,Germany,Europe,
+"Justus Liebig University, Giessen",Germany,Europe,
+University of Wurzburg,Germany,Europe,
+Dresden University of Technology,Germany,Europe,
+Humboldt-Universitaet zu Berlin,Germany,Europe,
+Technical University of Berlin,Germany,Europe,
+Helmut Schmidt University,Germany,Europe,
+WHU - Otto Beisheim School of Management,Germany,Europe,
+Georg-August-University,Germany,Europe,
+University of Hohenheim,Germany,Europe,
+University of Cologne,Germany,Europe,
+Gottingen University,Germany,Europe,
+RWTH Aachen University,Germany,Europe,
+University of Stuttgart,Germany,Europe,
+Humboldt University of Berlin,Germany,Europe,
+NOC Munich,Germany,Europe,
+Athens University of Economics & Business,Greece,Europe,
+The Hong Kong Polytechnic University,Hong Kong,Asia,
+Hong Kong University of Science & Technology,Hong Kong,Asia,
+City University of Hong Kong,Hong Kong,Asia,
+The University of Hong Kong,Hong Kong,Asia,
+The Chinese University of Hong Kong,Hong Kong,Asia,
+Universidad Catolica De Honduras,Honduras,Americas,
+Corvinus University of Budapest,Hungary,Europe,
+Budapest University of Technology and Economics,Hungary,Europe,
+The LNM Institute of Information Technology,India,Asia,
+Trinity College Dublin,Ireland,Europe,1
+University College Dublin,Ireland,Europe,1
+"University College Cork, Ireland",Ireland,Europe,1
+The Hebrew University of Jerusalem,Israel,Middle East,
+Tel Aviv University,Israel,Middle East,
+Interdisciplinary Center Herzliya (IDC),Israel,Middle East,
+NOC Israel,Israel,Middle East,
+Universita degli Studi di Trento,Italy,Europe,
+University of Commerce 'Luigi Bocconi' Milan,Italy,Europe,
+"Ritsumeikan University,Kyoto",Japan,Asia,
+Tohoku University,Japan,Asia,
+Kyushu University,Japan,Asia,
+Waseda University,Japan,Asia,
+The University of Tokyo,Japan,Asia,
+Tokyo University of Foreign Studies,Japan,Asia,
+Tokyo University of Marine Science and Technology,Japan,Asia,
+Keio University,Japan,Asia,
+Tokyo Institute of Technology,Japan,Asia,
+Osaka University,Japan,Asia,
+Meiji University,Japan,Asia,
+Kyoto University,Japan,Asia,
+Hokkaido University,Japan,Asia,
+Hanyang University,South Korea,Asia,
+"Ewha Women's University,Seoul",South Korea,Asia,
+Korea University,South Korea,Asia,
+Korea Advanced Inst of Sci & Tech,South Korea,Asia,
+Hankuk University of Foreign Studies,South Korea,Asia,
+Yonsei University,South Korea,Asia,
+Seoul National University,South Korea,Asia,
+Sungkyunkwan University,South Korea,Asia,
+Pohang University of Science & Technology,South Korea,Asia,
+University of Seoul,South Korea,Asia,
+Riga Technical University,Latvia,Europe,
+Vilnius University,Lithuania,Europe,
+University of Nottingham Malaysia Campus,Malaysia,Asia,1
+Inst Tech y de Estudios Superiores de Monterrey,Mexico,Americas,
+Instituto Technologico Autonomo de Mexico,Mexico,Americas,
+Erasmus University,Netherlands,Europe,
+University of Amsterdam,Netherlands,Europe,
+Leiden University,Netherlands,Europe,
+Radboud University Nijmegen,Netherlands,Europe,
+Rotterdam School of Management,Netherlands,Europe,1
+Maastricht University,Netherlands,Europe,
+Eindhoven University of Technology,Netherlands,Europe,
+Tilburg University,Netherlands,Europe,
+Utrecht University,Netherlands,Europe,
+Delft University of Technology,Netherlands,Europe,
+Leiden University Medical Center (LUMC),Netherlands,Europe,
+Amsterdam University College,Netherlands,Europe,
+Norwegian University of Science & Technology,Norway,Europe,
+Norwegian Sch of Veterinary Science,Norway,Europe,
+Norwegian School of Economics,Norway,Europe,
+BI Norwegian Business School,Norway,Europe,
+University of Oslo,Norway,Europe,
+Victoria University of Wellington,New Zealand,Oceania,1
+University of Otago,New Zealand,Oceania,1
+University of Canterbury,New Zealand,Oceania,1
+Jagiellonian University,Poland,Europe,
+Warsaw School of Economics,Poland,Europe,
+Cracow University of Technology,Poland,Europe,
+Universidade Nova De Lisboa,Portugal,Europe,
+Catholic University of Portugal,Portugal,Europe,
+Saint Petersburg State University,Russia,Europe,
+Singapore Management University,Singapore,Asia,1
+Singapore University of Technology and Design,Singapore,Asia,1
+Nanyang Technological University,Singapore,Asia,1
+ESSEC Business School,Singapore,Asia,1
+University of Ljubljana,Slovenia,Europe,
+Universiteit van Stellenbosch,South Africa,Africa,
+Universidad Autonoma de Madrid,Spain,Europe,
+Esc. Sup. De Admin. Y Dir. De Empresas,Spain,Europe,
+University of Navarra,Spain,Europe,
+IE Business School,Spain,Europe,
+Universitat Autonoma de Barcelona,Spain,Europe,
+KTH Royal Institute of Technology,Sweden,Europe,
+Lund University,Sweden,Europe,
+University of Goteborg,Sweden,Europe,
+Stockholm School of Economics,Sweden,Europe,
+Linkoping University,Sweden,Europe,
+Uppsala University,Sweden,Europe,
+University of Stockholm,Sweden,Europe,
+Chalmers University of Technology,Sweden,Europe,
+University of Gothenburg,Sweden,Europe,
+Karolinska Institute,Sweden,Europe,
+NOC Stockholm,Sweden,Europe,
+ETH Zurich,Switzerland,Europe,
+University of Zurich,Switzerland,Europe,
+University of Geneva,Switzerland,Europe,
+University of Lausanne,Switzerland,Europe,
+University of St Gallen,Switzerland,Europe,
+Swiss Federal Institute of Technology Lausanne,Switzerland,Europe,
+Ecole Polytechnique Federale de Lausanne,Switzerland,Europe,
+National Chengchi University,Taiwan,Asia,
+National Chiao Tung University,Taiwan,Asia,
+Tunghai University,Taiwan,Asia,
+National Cheng Kung University,Taiwan,Asia,
+National Taiwan University,Taiwan,Asia,
+National Tsing Hua University,Taiwan,Asia,
+Chang Gung University,Taiwan,Asia,
+National Taiwan University of Science & Technology,Taiwan,Asia,
+Khon Kaen University,Thailand,Asia,
+Thammasat University,Thailand,Asia,
+Chulalongkorn University,Thailand,Asia,
+Mahidol University,Thailand,Asia,
+Sabanci University,Turkey,Europe,
+Bilkent University,Turkey,Europe,
+"Bogazici University, Turkey",Turkey,Europe,
+Koc University,Turkey,Europe,
+King's College London,United Kingdom,Europe,1
+London School of Economics & Political Science,United Kingdom,Europe,1
+The University of Sheffield,United Kingdom,Europe,1
+The University of Nottingham,United Kingdom,Europe,1
+University of Newcastle upon Tyne,United Kingdom,Europe,1
+The University of Edinburgh,United Kingdom,Europe,1
+Durham University,United Kingdom,Europe,1
+University of Bath,United Kingdom,Europe,1
+University of St Andrews,United Kingdom,Europe,1
+"Royal Holloway, University of London",United Kingdom,Europe,1
+The University of Manchester,United Kingdom,Europe,1
+University of Warwick,United Kingdom,Europe,1
+University College London,United Kingdom,Europe,1
+University of Liverpool,United Kingdom,Europe,1
+University of Leeds,United Kingdom,Europe,1
+"City, University of London",United Kingdom,Europe,1
+University of Cambridge,United Kingdom,Europe,1
+University of Birmingham,United Kingdom,Europe,1
+University of Aberdeen,United Kingdom,Europe,1
+Imperial College London,United Kingdom,Europe,1
+University of Southampton,United Kingdom,Europe,1
+University of Oxford,United Kingdom,Europe,1
+University of Dundee,United Kingdom,Europe,1
+University of Strathclyde,United Kingdom,Europe,1
+Loughborough University,United Kingdom,Europe,1
+Oxford Brookes University,United Kingdom,Europe,1
+University of Glasgow,United Kingdom,Europe,1
+University of Bristol,United Kingdom,Europe,1
+University of York,United Kingdom,Europe,1
+European Business School,UNKNOWN,Europe,
+"University of the Republic, Uruguay",Uruguay,Americas,0
+Iowa State University,United States of America,Americas,1
+Yale University,United States of America,Americas,1
+University of Pittsburgh,United States of America,Americas,1
+Pennsylvania State University,United States of America,Americas,1
+New York University,United States of America,Americas,1
+University of Notre Dame,United States of America,Americas,1
+"University of North Carolina, Chapel Hill",United States of America,Americas,1
+"University of Illinois, Urbana-Champaign",United States of America,Americas,1
+University of Georgia,United States of America,Americas,1
+Georgia Institute of Technology,United States of America,Americas,1
+The George Washington University,United States of America,Americas,1
+Duke University,United States of America,Americas,1
+University of Connecticut,United States of America,Americas,1
+The College of William & Mary,United States of America,Americas,1
+University of California,United States of America,Americas,1
+Brandeis University,United States of America,Americas,1
+Tulane University,United States of America,Americas,1
+Eckerd College,United States of America,Americas,1
+Cornell University,United States of America,Americas,1
+North Carolina State University,United States of America,Americas,1
+University of Wisconsin-Madison,United States of America,Americas,1
+"University of Washington, Seattle",United States of America,Americas,1
+University of Virginia,United States of America,Americas,1
+The University of Texas at Austin,United States of America,Americas,1
+Stanford University,United States of America,Americas,1
+University of Southern California,United States of America,Americas,1
+Purdue University,United States of America,Americas,1
+University of Oregon,United States of America,Americas,1
+"University of Michigan, Ann Arbor",United States of America,Americas,1
+University of Miami,United States of America,Americas,1
+"Indiana University, Bloomington",United States of America,Americas,1
+"University of Hawaii, Manoa",United States of America,Americas,1
+University of Florida,United States of America,Americas,1
+Case Western Reserve University,United States of America,Americas,1
+"University of California, Riverside",United States of America,Americas,1
+"University of California, San Diego",United States of America,Americas,1
+"University of California, Santa Barbara",United States of America,Americas,1
+"University of California, Irvine",United States of America,Americas,1
+"University of California, Davis",United States of America,Americas,1
+"University of California, Berkeley",United States of America,Americas,1
+Boston University,United States of America,Americas,1
+Arizona State University,United States of America,Americas,1
+Clarkson University,United States of America,Americas,1
+"University of North Carolina, Kenan-Flagler",United States of America,Americas,1
+"Boston College, Massachusetts",United States of America,Americas,1
+University of San Diego,United States of America,Americas,1
+Vanderbilt University,United States of America,Americas,1
+University of Pennsylvania,United States of America,Americas,1
+Northwestern University,United States of America,Americas,1
+University of Minnesota,United States of America,Americas,1
+Johns Hopkins University,United States of America,Americas,1
+Georgetown University,United States of America,Americas,1
+Columbia University,United States of America,Americas,1
+Carnegie Mellon University,United States of America,Americas,1
+"University of California, Santa Cruz",United States of America,Americas,1
+The University of Arizona,United States of America,Americas,1
+"University of California, Merced",United States of America,Americas,1
+University of Colorado Boulder,United States of America,Americas,1
+Colgate University,United States of America,Americas,1
+Texas A & M University,United States of America,Americas,1
+Rice University,United States of America,Americas,1
+"California Poly State Uni, SLO",United States of America,Americas,1
+California State University East bay,United States of America,Americas,1
+"University of California, Los Angeles",United States of America,Americas,1
+University of Maryland,United States of America,Americas,1
+Emory University,United States of America,Americas,1
+University of Delaware,United States of America,Americas,1
+NOC Silicon Valley,United States of America,Americas,1
+NOC New York,United States of America,Americas,1

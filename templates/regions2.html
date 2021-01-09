@@ -1,0 +1,97 @@
+<div class="form-group margin-bottom-med">
+    <div class="form-group-prepend">
+        <span class="form-group-text font-sz-mid">Regions:</span>
+        <button class="btn-tertiary margin-bottom-sm" type="button" onClick="toggle()">
+            <span class="form-group-text">
+                <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="selectall"
+                    onClick="toggle(this)"
+                    style="opacity:0"
+                />
+                Select All
+            </span>
+        </button>
+    </div>
+    <div class="form-control-lg form-control">
+      {% for region in order_of_regions %}
+        {% if region in selected_regions %}
+          <div class="form-check form-check-inline">
+              <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id={{region.lower()}}
+                  value={{region}}
+                  name="regions"
+                  checked=checked
+              />
+              <label class="form-check-label" for={{region.lower()}}>{{region}}</label>
+          </div>
+        {% else %}
+          <div class="form-check form-check-inline">
+              <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id={{region.lower()}}
+                  value={{region}}
+                  name="regions"
+              />
+              <label class="form-check-label" for={{region.lower()}}>{{region}}</label>
+          </div>
+        {% endif %}
+      {% endfor %}
+        <!-- <div class="form-check form-check-inline">
+            <input
+                class="form-check-input"
+                type="checkbox"
+                id="americas"
+                value="Americas"
+                name="regions"
+            />
+            <label class="form-check-label" for="americas">Americas</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input
+                class="form-check-input"
+                type="checkbox"
+                id="asia"
+                value="Asia"
+                name="regions"
+            />
+            <label class="form-check-label" for="asia">Asia</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input
+                class="form-check-input"
+                type="checkbox"
+                id="europe"
+                value="Europe"
+                name="regions"
+            />
+            <label class="form-check-label" for="europe">Europe</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input
+                class="form-check-input"
+                type="checkbox"
+                id="oceania"
+                value="Oceania"
+                name="regions"
+            />
+            <label class="form-check-label" for="oceania">Oceania</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input
+                class="form-check-input"
+                type="checkbox"
+                id="africa"
+                value="Africa"
+                name="regions"
+            />
+            <label class="form-check-label" for="africa">Africa</label>
+        </div> -->
+    </div>
+
+
+</div>
