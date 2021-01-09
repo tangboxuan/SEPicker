@@ -1,43 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <script
-            src="https://kit.fontawesome.com/aa4b3d32f9.js"
-            crossorigin="anonymous"
-        ></script>
+{% extends "layout.html" %}
 
-        <link href="static/style.css" rel="stylesheet" type="text/css" />
+{% block title %}
+    SEPicker
+{% endblock %}
 
-        <title>SEPicker</title>
-
-    </head>
-    <body>
-        <div class="navigation">
-            <nav class="navigation__nav">
-                <div class="navigation__name">
-                    <i class="fas fa-globe-asia"></i>
-                    SEPicker
-                </div>
-                <!-- <div class="navigation__list">
-                    <a href="/picker" class="navigation__link">Picker</a>
-                    <a href="/fav" class="navigation__link" disabled>Favourites</a>
-                </div> -->
-            </nav>
-        </div>
+{% block main %}
         {% if error %}
         <div class="my-alert danger" onClick="closeAlert(this)">
             {{ error }}. Click banner to dismiss.
@@ -251,9 +218,9 @@
                     >
                         <span class="heading-primary">{{country}}</span>
                     </div>
-                    {% for i in range(max, min-1, -1) %} {% for uni in
-                    output_dict[country] %} {% if
-                    output_dict[country][uni]["n_mods"] == i %}
+                    {% for i in range(max, min-1, -1) %} 
+                    {% for uni in output_dict[country] %} 
+                    {% if output_dict[country][uni]["n_mods"] == i %}
                     <div
                         class="pus-container"
                         id="{{''.join(country.split()).lower() + '-pus'}}"
@@ -317,35 +284,11 @@
                             </div>
                         </div>
                     </div>
-                    {% endif %} {% endfor %} {% endfor %}
+                    {% endif %} 
+                    {% endfor %} 
+                    {% endfor %}
                 </div>
                 {% endfor %}
             </div>
-            <footer class="small text-center text-muted" style="background-color: white;">
-                A Hack & Roll 2021 Project by Tang Boxuan, Yeo Zhi Long, Sherwin Poh and Benjamin Lee. Last updated 8 Jan 2020.
-            </footer>
-            <script>
-              if ( window.history.replaceState ) {
-                  window.history.replaceState( null, null, window.location.href );
-              }
-          </script>
-            <script
-                src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"
-            ></script>
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                crossorigin="anonymous"
-            ></script>
-            <script
-                src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-                crossorigin="anonymous"
-            ></script>
             <script src="static/picker.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-        </div>
-    </body>
-</html>
+{% endblock %}
