@@ -18,7 +18,14 @@
         name="schools"
         id="schools"
     >
-        <option class="font-sz-mid">Aalto University, Helsinki</option>
+    {% for school in list_of_schools %}
+      {% if school in selected_schools %}
+        <option class="font-sz-mid" selected>{{school}}</option>
+      {% else %}
+        <option class="font-sz-mid">{{school}}</option>
+      {% endif %}
+    {% endfor %}
+        <!-- <option class="font-sz-mid">Aalto University, Helsinki</option>
         <option class="font-sz-mid">Aalto University, Mikkeli</option>
         <option class="font-sz-mid">Aalto University</option>
         <option class="font-sz-mid">Aarhus School of Business</option>
@@ -539,7 +546,7 @@
         <option class="font-sz-mid">Yale University</option>
         <option class="font-sz-mid">Yonsei University</option>
         <option class="font-sz-mid">York University</option>
-        <option class="font-sz-mid">Zhejiang University</option>
+        <option class="font-sz-mid">Zhejiang University</option> -->
     </select>
 
 </div>

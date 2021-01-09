@@ -1,0 +1,46 @@
+<option class="font-sz-mid">Australia</option>
+<option class="font-sz-mid">Austria</option>
+<option class="font-sz-mid">Belgium</option>
+<option class="font-sz-mid">Canada</option>
+<option class="font-sz-mid" data-tokens="prc people's republic">China</option>
+<option class="font-sz-mid">Croatia</option>
+<option class="font-sz-mid">Czech Republic</option>
+<option class="font-sz-mid">Denmark</option>
+<option class="font-sz-mid">Estonia</option>
+<option class="font-sz-mid">Finland</option>
+<option class="font-sz-mid">France</option>
+<option class="font-sz-mid">Germany</option>
+<option class="font-sz-mid">Greece</option>
+<option class="font-sz-mid" data-tokens="hk">Hong Kong</option>
+<option class="font-sz-mid">Honduras</option>
+<option class="font-sz-mid">Hungary</option>
+<option class="font-sz-mid">India</option>
+<option class="font-sz-mid" data-tokens="republic">Ireland</option>
+<option class="font-sz-mid">Israel</option>
+<option class="font-sz-mid">Italy</option>
+<option class="font-sz-mid">Japan</option>
+<option class="font-sz-mid" data-tokens="republic">South Korea</option>
+<option class="font-sz-mid">Latvia</option>
+<option class="font-sz-mid">Lithuania</option>
+<option class="font-sz-mid">Malaysia</option>
+<option class="font-sz-mid">Mexico</option>
+<option class="font-sz-mid">Netherlands</option>
+<option class="font-sz-mid">Norway</option>
+<option class="font-sz-mid" data-tokens="nz">New Zealand</option>
+<option class="font-sz-mid">Poland</option>
+<option class="font-sz-mid">Portugal</option>
+<option class="font-sz-mid">Russia</option>
+<option class="font-sz-mid" data-tokens="sg">Singapore</option>
+<option class="font-sz-mid">Slovenia</option>
+<option class="font-sz-mid">South Africa</option>
+<option class="font-sz-mid">Spain</option>
+<option class="font-sz-mid">Sweden</option>
+<option class="font-sz-mid">Switzerland</option>
+<option class="font-sz-mid">Taiwan</option>
+<option class="font-sz-mid">Thailand</option>
+<option class="font-sz-mid">Turkey</option>
+<option class="font-sz-mid" data-tokens="uk britain england scotland wales northen ireland">United Kingdom</option>
+<option class="font-sz-mid">Uruguay</option>
+<option class="font-sz-mid" data-tokens="usa">United States of America</option>
+<option class="font-sz-mid">Australia</option>
+<option class="font-sz-mid">Austria</option>

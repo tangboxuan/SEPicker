@@ -1,0 +1,337 @@
+<option class="font-sz-mid">Aalto University, Helsinki</option>
+<option class="font-sz-mid">Aalto University, Mikkeli</option>
+<option class="font-sz-mid">Aalto University</option>
+<option class="font-sz-mid">Aarhus School of Business</option>
+<option class="font-sz-mid">Aarhus University</option>
+<option class="font-sz-mid">Amsterdam University College</option>
+<option class="font-sz-mid">Arizona State University</option>
+<option class="font-sz-mid">Athens University of Economics & Business</option>
+<option class="font-sz-mid">BI Norwegian Business School</option>
+<option class="font-sz-mid">Beihang University</option>
+<option class="font-sz-mid">Bilkent University</option>
+<option class="font-sz-mid">Bogazici University, Turkey</option>
+<option class="font-sz-mid">Boston College, Massachusetts</option>
+<option class="font-sz-mid" data-tokens="bu">Boston University</option>
+<option class="font-sz-mid">Brandeis University</option>
+<option class="font-sz-mid">Bremen University of Applied Sciences</option>
+<option class="font-sz-mid">Budapest University of Technology and Economics</option>
+<option class="font-sz-mid" data-tokens="Polytechnic University">California Poly State Uni, SLO</option>
+<option class="font-sz-mid">California State University East Bay</option>
+<option class="font-sz-mid" data-tokens="cmu">Carnegie Mellon University</option>
+<option class="font-sz-mid">Case Western Reserve University</option>
+<option class="font-sz-mid">Catholic University of Portugal</option>
+<option class="font-sz-mid">Central University of Finance & Economics</option>
+<option class="font-sz-mid">CentraleSupelec - Ecole Centrale Paris</option>
+<option class="font-sz-mid">Chalmers University of Technology</option>
+<option class="font-sz-mid">Chang Gung University</option>
+<option class="font-sz-mid">Charles University in Prague</option>
+<option class="font-sz-mid">Chongqing University</option>
+<option class="font-sz-mid">Chulalongkorn University</option>
+<option class="font-sz-mid">City University of Hong Kong</option>
+<option class="font-sz-mid" data-tokens="uol">City, University of London</option>
+<option class="font-sz-mid">Clarkson University</option>
+<option class="font-sz-mid">Colgate University</option>
+<option class="font-sz-mid">Columbia University</option>
+<option class="font-sz-mid">Concordia University</option>
+<option class="font-sz-mid">Copenhagen Business School</option>
+<option class="font-sz-mid">Cornell University</option>
+<option class="font-sz-mid">Corvinus University of Budapest</option>
+<option class="font-sz-mid">Cracow University of Technology</option>
+<option class="font-sz-mid">Czech Technical University</option>
+<option class="font-sz-mid">Dalhousie University</option>
+<option class="font-sz-mid">Delft University of Technology</option>
+<option class="font-sz-mid">Dresden University of Technology</option>
+<option class="font-sz-mid">Duke University</option>
+<option class="font-sz-mid">Durham University</option>
+<option class="font-sz-mid">ESSEC Business School</option>
+<option class="font-sz-mid">ETH Zurich</option>
+<option class="font-sz-mid">Eckerd College</option>
+<option class="font-sz-mid">Ecole Centrale Des Arts Et Manufactures, Paris</option>
+<option class="font-sz-mid" data-tokens="epfl">Ecole Polytechnique Federale de Lausanne</option>
+<option class="font-sz-mid">Ecole Speciale D'Architecture, Paris</option>
+<option class="font-sz-mid">Eindhoven University of Technology</option>
+<option class="font-sz-mid">Emory University</option>
+<option class="font-sz-mid">Erasmus University</option>
+<option class="font-sz-mid">Esc. Sup. De Admin. Y Dir. De Empresas</option>
+<option class="font-sz-mid">European Business School</option>
+<option class="font-sz-mid">Ewha Women's University,Seoul</option>
+<option class="font-sz-mid">Free University of Berlin</option>
+<option class="font-sz-mid">Free University of Brussels</option>
+<option class="font-sz-mid">Fudan University</option>
+<option class="font-sz-mid">Georg-August-University</option>
+<option class="font-sz-mid">Georgetown University</option>
+<option class="font-sz-mid">Georgia Institute of Technology</option>
+<option class="font-sz-mid">Gottingen University</option>
+<option class="font-sz-mid">Grenoble Institute of Technology (Grenoble INP)</option>
+<option class="font-sz-mid" data-tokens="hautes etudes commerciales">HEC Montreal</option>
+<option class="font-sz-mid">Hamburg University of Technology (TUHH)</option>
+<option class="font-sz-mid">Hankuk University of Foreign Studies</option>
+<option class="font-sz-mid">Hanyang University</option>
+<option class="font-sz-mid">Hautes Etudes Commerciales (HEC) Paris</option>
+<option class="font-sz-mid">Heidelberg University (Rupr-Karls-Uni Heidelberg)</option>
+<option class="font-sz-mid">Helmut Schmidt University</option>
+<option class="font-sz-mid">Hokkaido University</option>
+<option class="font-sz-mid" data-tokens="hkust">Hong Kong University of Science & Technology</option>
+<option class="font-sz-mid">Humboldt University of Berlin</option>
+<option class="font-sz-mid">Humboldt-Universitaet zu Berlin</option>
+<option class="font-sz-mid">IE Business School</option>
+<option class="font-sz-mid" data-tokens="icl">Imperial College London</option>
+<option class="font-sz-mid">Indiana University, Bloomington</option>
+<option class="font-sz-mid">Inst Tech y de Estudios Superiores de Monterrey</option>
+<option class="font-sz-mid">Institut d'Etudes Politiques de Grenoble</option>
+<option class="font-sz-mid">Instituto Technologico Autonomo de Mexico</option>
+<option class="font-sz-mid">Interdisciplinary Center Herzliya (IDC)</option>
+<option class="font-sz-mid">Iowa State University</option>
+<option class="font-sz-mid">Jagiellonian University</option>
+<option class="font-sz-mid" data-tokens="jhu">Johns Hopkins University</option>
+<option class="font-sz-mid">Justus Liebig University, Giessen</option>
+<option class="font-sz-mid">KTH Royal Institute of Technology</option>
+<option class="font-sz-mid">Karlsruhe Institute of Technology</option>
+<option class="font-sz-mid">Karolinska Institute</option>
+<option class="font-sz-mid">Keio University</option>
+<option class="font-sz-mid">Khon Kaen University</option>
+<option class="font-sz-mid" data-tokens="kcl uol">King's College London</option>
+<option class="font-sz-mid">Koc University</option>
+<option class="font-sz-mid" data-tokens="institute science technology">Korea Advanced Inst of Sci & Tech</option>
+<option class="font-sz-mid">Korea University</option>
+<option class="font-sz-mid">Kyoto University</option>
+<option class="font-sz-mid">Kyushu University</option>
+<option class="font-sz-mid">La Trobe University</option>
+<option class="font-sz-mid">LaTrobe University</option>
+<option class="font-sz-mid">Leiden University Medical Center (LUMC)</option>
+<option class="font-sz-mid">Leiden University</option>
+<option class="font-sz-mid">Linkoping University</option>
+<option class="font-sz-mid" data-tokens="lse uol">London School of Economics & Political Science</option>
+<option class="font-sz-mid">Loughborough University</option>
+<option class="font-sz-mid">Ludwig-Maximilians-University of Munich</option>
+<option class="font-sz-mid">Lund University</option>
+<option class="font-sz-mid">Maastricht University</option>
+<option class="font-sz-mid">Mahidol University</option>
+<option class="font-sz-mid">Management Center Innsbruck</option>
+<option class="font-sz-mid">Mannheim Business School</option>
+<option class="font-sz-mid">McGill University</option>
+<option class="font-sz-mid">McMaster University</option>
+<option class="font-sz-mid">Meiji University</option>
+<option class="font-sz-mid">Minzu University of China</option>
+<option class="font-sz-mid">Monash University</option>
+<option class="font-sz-mid" data-tokens="nus overseas college">NOC Beijing</option>
+<option class="font-sz-mid" data-tokens="nus overseas college">NOC Israel</option>
+<option class="font-sz-mid" data-tokens="nus overseas college">NOC Munich</option>
+<option class="font-sz-mid" data-tokens="nus overseas college">NOC New York</option>
+<option class="font-sz-mid" data-tokens="nus overseas college">NOC Shanghai</option>
+<option class="font-sz-mid" data-tokens="nus overseas college">NOC Shenzhen</option>
+<option class="font-sz-mid" data-tokens="nus overseas college">NOC Silicon Valley</option>
+<option class="font-sz-mid" data-tokens="nus overseas college">NOC Stockholm</option>
+<option class="font-sz-mid" data-tokens="nus overseas college">NOC Toronto</option>
+<option class="font-sz-mid">Nanjing University</option>
+<option class="font-sz-mid">Nankai University</option>
+<option class="font-sz-mid" data-tokens="ntu">Nanyang Technological University</option>
+<option class="font-sz-mid">National Cheng Kung University</option>
+<option class="font-sz-mid">National Chengchi University</option>
+<option class="font-sz-mid">National Chiao Tung University</option>
+<option class="font-sz-mid">National Taiwan University of Science & Technology</option>
+<option class="font-sz-mid">National Taiwan University</option>
+<option class="font-sz-mid" data-tokens="tsinghua">National Tsing Hua University</option>
+<option class="font-sz-mid" data-tokens="nyu">New York University</option>
+<option class="font-sz-mid">North Carolina State University</option>
+<option class="font-sz-mid">Northwestern University</option>
+<option class="font-sz-mid">Norwegian Sch of Veterinary Science</option>
+<option class="font-sz-mid">Norwegian School of Economics</option>
+<option class="font-sz-mid">Norwegian University of Science & Technology</option>
+<option class="font-sz-mid">Osaka University</option>
+<option class="font-sz-mid">Oulu University</option>
+<option class="font-sz-mid">Oxford Brookes University</option>
+<option class="font-sz-mid" data-tokens="beida beijing">Peking University</option>
+<option class="font-sz-mid">Pennsylvania State University</option>
+<option class="font-sz-mid">Pohang University of Science & Technology</option>
+<option class="font-sz-mid">Purdue University</option>
+<option class="font-sz-mid">Queen's University at Kingston</option>
+<option class="font-sz-mid">RWTH Aachen University</option>
+<option class="font-sz-mid">Radboud University Nijmegen</option>
+<option class="font-sz-mid">Renmin University of China</option>
+<option class="font-sz-mid">Rheinisch Friedrich-Wilhelms University of Bonn</option>
+<option class="font-sz-mid">Rice University</option>
+<option class="font-sz-mid">Richard Ivey Sch of Biz, Univ of Western Ontario</option>
+<option class="font-sz-mid">Riga Technical University</option>
+<option class="font-sz-mid">Ritsumeikan University,Kyoto</option>
+<option class="font-sz-mid">Rotterdam School of Management</option>
+<option class="font-sz-mid" data-tokens="uol">Royal Holloway, University of London</option>
+<option class="font-sz-mid">Sabanci University</option>
+<option class="font-sz-mid">Saint Petersburg State University</option>
+<option class="font-sz-mid">Sciences Po</option>
+<option class="font-sz-mid">Seoul National University</option>
+<option class="font-sz-mid" data-tokens="sjtu">Shanghai Jiao Tong University</option>
+<option class="font-sz-mid">Simon Fraser University</option>
+<option class="font-sz-mid" data-tokens="smu">Singapore Management University</option>
+<option class="font-sz-mid" data-tokens="sutd">Singapore University of Technology and Design</option>
+<option class="font-sz-mid">Stanford University</option>
+<option class="font-sz-mid">Stockholm School of Economics</option>
+<option class="font-sz-mid">Sun Yat Sen University</option>
+<option class="font-sz-mid">Sungkyunkwan University</option>
+<option class="font-sz-mid">Suzhou University</option>
+<option class="font-sz-mid">Swiss Federal Institute of Technology Lausanne</option>
+<option class="font-sz-mid">Tallinn University of Technology</option>
+<option class="font-sz-mid">Tampere University of Technology</option>
+<option class="font-sz-mid">Technical University of Berlin</option>
+<option class="font-sz-mid">Technical University of Darmstadt</option>
+<option class="font-sz-mid">Technical University of Denmark</option>
+<option class="font-sz-mid">Technical University of Munich</option>
+<option class="font-sz-mid">Tel Aviv University</option>
+<option class="font-sz-mid">Texas A & M University</option>
+<option class="font-sz-mid">Thammasat University</option>
+<option class="font-sz-mid">The Australian National University</option>
+<option class="font-sz-mid">The Chinese University of Hong Kong</option>
+<option class="font-sz-mid">The College of William & Mary</option>
+<option class="font-sz-mid">The George Washington University</option>
+<option class="font-sz-mid">The Hebrew University of Jerusalem</option>
+<option class="font-sz-mid">The Hong Kong Polytechnic University</option>
+<option class="font-sz-mid">The LNM Institute of Information Technology</option>
+<option class="font-sz-mid">The University of Adelaide</option>
+<option class="font-sz-mid">The University of Arizona</option>
+<option class="font-sz-mid">The University of Auckland</option>
+<option class="font-sz-mid" data-tokens="ubc">The University of British Columbia (Okanagan)</option>
+<option class="font-sz-mid" data-tokens="ubc">The University of British Columbia</option>
+<option class="font-sz-mid" data-tokens="uoe">The University of Edinburgh</option>
+<option class="font-sz-mid">The University of Hong Kong</option>
+<option class="font-sz-mid">The University of Manchester</option>
+<option class="font-sz-mid">The University of Melbourne</option>
+<option class="font-sz-mid" data-tokens="unswm">The University of New South Wales</option>
+<option class="font-sz-mid">The University of Nottingham</option>
+<option class="font-sz-mid">The University of Queensland</option>
+<option class="font-sz-mid">The University of Sheffield</option>
+<option class="font-sz-mid">The University of Sydney</option>
+<option class="font-sz-mid" data-tokens="ut">The University of Texas at Austin</option>
+<option class="font-sz-mid">The University of Tokyo</option>
+<option class="font-sz-mid">The University of Western Australia</option>
+<option class="font-sz-mid">Tianjin University of Finance and Economics</option>
+<option class="font-sz-mid">Tianjin University</option>
+<option class="font-sz-mid">Tilburg University</option>
+<option class="font-sz-mid">Tohoku University</option>
+<option class="font-sz-mid">Tokyo Institute of Technology</option>
+<option class="font-sz-mid">Tokyo University of Foreign Studies</option>
+<option class="font-sz-mid">Tokyo University of Marine Science and Technology</option>
+<option class="font-sz-mid">Tongji University</option>
+<option class="font-sz-mid">Trinity College Dublin</option>
+<option class="font-sz-mid">Tsinghua University</option>
+<option class="font-sz-mid">Tulane University</option>
+<option class="font-sz-mid">Tunghai University</option>
+<option class="font-sz-mid">Universidad Autonoma de Madrid</option>
+<option class="font-sz-mid">Universidad Catolica De Honduras</option>
+<option class="font-sz-mid">Universidade Nova De Lisboa</option>
+<option class="font-sz-mid">Universita degli Studi di Trento</option>
+<option class="font-sz-mid">Universitat Autonoma de Barcelona</option>
+<option class="font-sz-mid">Universite Catholique De Louvain</option>
+<option class="font-sz-mid">Universite Catholique de Louvain</option>
+<option class="font-sz-mid">Universiteit van Stellenbosch</option>
+<option class="font-sz-mid">University College Cork, Ireland</option>
+<option class="font-sz-mid" data-tokens="ucd">University College Dublin</option>
+<option class="font-sz-mid" data-tokens="ucl uol">University College London</option>
+<option class="font-sz-mid">University of Aberdeen</option>
+<option class="font-sz-mid">University of Alberta</option>
+<option class="font-sz-mid">University of Amsterdam</option>
+<option class="font-sz-mid">University of Antwerp</option>
+<option class="font-sz-mid">University of Applied Sciences Esslingen</option>
+<option class="font-sz-mid">University of Bath</option>
+<option class="font-sz-mid">University of Birmingham</option>
+<option class="font-sz-mid">University of Bordeaux</option>
+<option class="font-sz-mid">University of Bristol</option>
+<option class="font-sz-mid">University of Brussels, Solvay Business School</option>
+<option class="font-sz-mid">University of Calgary</option>
+<option class="font-sz-mid" data-tokens="ucb">University of California, Berkeley</option>
+<option class="font-sz-mid" data-tokens="ucd">University of California, Davis</option>
+<option class="font-sz-mid" data-tokens="uci">University of California, Irvine</option>
+<option class="font-sz-mid" data-tokens="ucla">University of California, Los Angeles</option>
+<option class="font-sz-mid" data-tokens="ucm">University of California, Merced</option>
+<option class="font-sz-mid" data-tokens="ucr">University of California, Riverside</option>
+<option class="font-sz-mid" data-tokens="ucsd">University of California, San Diego</option>
+<option class="font-sz-mid" data-tokens="ucsb">University of California, Santa Barbara</option>
+<option class="font-sz-mid" data-tokens="ucsc">University of California, Santa Cruz</option>
+<option class="font-sz-mid" data-tokens="uc">University of California</option>
+<option class="font-sz-mid">University of Cambridge</option>
+<option class="font-sz-mid">University of Canterbury</option>
+<option class="font-sz-mid">University of Cologne</option>
+<option class="font-sz-mid">University of Colorado Boulder</option>
+<option class="font-sz-mid">University of Commerce 'Luigi Bocconi' Milan</option>
+<option class="font-sz-mid">University of Connecticut</option>
+<option class="font-sz-mid">University of Copenhagen</option>
+<option class="font-sz-mid">University of Delaware</option>
+<option class="font-sz-mid">University of Dundee</option>
+<option class="font-sz-mid">University of Florida</option>
+<option class="font-sz-mid">University of Geneva</option>
+<option class="font-sz-mid">University of Georgia</option>
+<option class="font-sz-mid">University of Glasgow</option>
+<option class="font-sz-mid">University of Goteborg</option>
+<option class="font-sz-mid">University of Gothenburg</option>
+<option class="font-sz-mid">University of Guelph</option>
+<option class="font-sz-mid">University of Hawaii, Manoa</option>
+<option class="font-sz-mid">University of Helsinki</option>
+<option class="font-sz-mid">University of Hohenheim</option>
+<option class="font-sz-mid" data-tokens="uiuc">University of Illinois, Urbana-Champaign</option>
+<option class="font-sz-mid">University of Innsbruck</option>
+<option class="font-sz-mid">University of Kaiserslautern, FRG</option>
+<option class="font-sz-mid">University of Konstanz</option>
+<option class="font-sz-mid">University of Lausanne</option>
+<option class="font-sz-mid">University of Leeds</option>
+<option class="font-sz-mid">University of Liverpool</option>
+<option class="font-sz-mid">University of Ljubljana</option>
+<option class="font-sz-mid">University of Mannheim</option>
+<option class="font-sz-mid">University of Maryland</option>
+<option class="font-sz-mid">University of Miami</option>
+<option class="font-sz-mid" data-tokens="umich">University of Michigan, Ann Arbor</option>
+<option class="font-sz-mid">University of Minnesota</option>
+<option class="font-sz-mid">University of Navarra</option>
+<option class="font-sz-mid">University of Newcastle upon Tyne</option>
+<option class="font-sz-mid">University of Newcastle</option>
+<option class="font-sz-mid" data-tokens="unc">University of North Carolina, Chapel Hill</option>
+<option class="font-sz-mid" data-tokens="unc">University of North Carolina, Kenan-Flagler</option>
+<option class="font-sz-mid">University of Notre Dame</option>
+<option class="font-sz-mid">University of Nottingham Malaysia Campus</option>
+<option class="font-sz-mid">University of Oregon</option>
+<option class="font-sz-mid">University of Oslo</option>
+<option class="font-sz-mid">University of Otago</option>
+<option class="font-sz-mid">University of Ottawa</option>
+<option class="font-sz-mid">University of Oxford</option>
+<option class="font-sz-mid">University of Pennsylvania</option>
+<option class="font-sz-mid">University of Pittsburgh</option>
+<option class="font-sz-mid">University of San Diego</option>
+<option class="font-sz-mid">University of Seoul</option>
+<option class="font-sz-mid">University of Southampton</option>
+<option class="font-sz-mid" data-tokens="usc">University of Southern California</option>
+<option class="font-sz-mid">University of Southern Denmark - Odense University</option>
+<option class="font-sz-mid">University of St Andrews</option>
+<option class="font-sz-mid">University of St Gallen</option>
+<option class="font-sz-mid">University of Stockholm</option>
+<option class="font-sz-mid">University of Strathclyde</option>
+<option class="font-sz-mid">University of Stuttgart</option>
+<option class="font-sz-mid">University of Technology of Compiegne</option>
+<option class="font-sz-mid">University of Technology of Troyes</option>
+<option class="font-sz-mid">University of Toronto (Mississauga)</option>
+<option class="font-sz-mid">University of Toronto</option>
+<option class="font-sz-mid">University of Victoria, British Columbia</option>
+<option class="font-sz-mid">University of Virginia</option>
+<option class="font-sz-mid">University of Warwick</option>
+<option class="font-sz-mid">University of Washington, Seattle</option>
+<option class="font-sz-mid">University of Waterloo</option>
+<option class="font-sz-mid">University of Wisconsin-Madison</option>
+<option class="font-sz-mid">University of Wurzburg</option>
+<option class="font-sz-mid">University of York</option>
+<option class="font-sz-mid">University of Zagreb</option>
+<option class="font-sz-mid">University of Zurich</option>
+<option class="font-sz-mid">University of the Republic, Uruguay</option>
+<option class="font-sz-mid">Uppsala University</option>
+<option class="font-sz-mid">Utrecht University</option>
+<option class="font-sz-mid">Vanderbilt University</option>
+<option class="font-sz-mid">Victoria University of Wellington</option>
+<option class="font-sz-mid">Victoria University</option>
+<option class="font-sz-mid">Vienna University of Economics and Business</option>
+<option class="font-sz-mid">Vilnius University</option>
+<option class="font-sz-mid">WHU - Otto Beisheim School of Management</option>
+<option class="font-sz-mid">Warsaw School of Economics</option>
+<option class="font-sz-mid">Waseda University</option>
+<option class="font-sz-mid">Western University</option>
+<option class="font-sz-mid">Xi'an Jiaotong University</option>
+<option class="font-sz-mid">Xiamen University</option>
+<option class="font-sz-mid">Yale University</option>
+<option class="font-sz-mid">Yonsei University</option>
+<option class="font-sz-mid">York University</option>
+<option class="font-sz-mid">Zhejiang University</option>

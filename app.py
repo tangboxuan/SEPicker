@@ -6,11 +6,25 @@ app = Flask(__name__)
 
 ## To generate dictionary for nus mod code: nus mod title
 nus_code_title_dict = {}
-filename = "static/nus_modules.txt"
-file = open(filename, "r")
-for line in file:
+nus_modules_filename = "static/nus_modules.txt"
+nus_modules_file = open(nus_modules_filename, "r")
+for line in nus_modules_file:
     mod_title = line.split(">")[1].split("<")[0].split(" ")[1:]
     nus_code_title_dict[line.split(">")[1].split("<")[0].split(" ")[0]] = " ".join(mod_title)
+
+## Generate list of all countries
+countries_options_filename = "static/countries_options.txt"
+countries_options_file = open(countries_options_filename, "r")
+list_of_countries = []
+for line in countries_options_file:
+    list_of_countries.append(line.split(">")[1].split("<")[0])
+
+## Generate list of all schools
+schools_options_filename = "static/schools_options.txt"
+schools_options_file = open(schools_options_filename, "r")
+list_of_schools = []
+for line in schools_options_file:
+    list_of_schools.append(line.split(">")[1].split("<")[0])
 
 def dict_merger(dict1,dict2):
     for region in dict2:
@@ -29,8 +43,18 @@ def dict_merger(dict1,dict2):
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+    order_of_regions = ['Americas', 'Asia', 'Europe', 'Oceania', 'Africa']
+    selected_regions = []
+    essentialModules = []
+    optionalModules = []
+    selected_countries = []
+    selected_schools = []
     if request.method == "GET":
-        return render_template("picker.html", is_get=True)
+        return render_template("picker.html", is_get=True, selected_regions=selected_regions,
+                               order_of_regions=order_of_regions, nus_code_title_dict=nus_code_title_dict,
+                               essentialModules=essentialModules,optionalModules=optionalModules,
+                               selected_countries=selected_countries,list_of_countries=list_of_countries,
+                               selected_schools=selected_schools,list_of_schools=list_of_schools)
     else: #POST
         essentialModules = request.form.getlist("em")
         optionalModules = request.form.getlist("om")
@@ -42,39 +66,38 @@ def index():
         for i in range(len(optionalModules)):
             optionalModules[i] = optionalModules[i].split()[0]
 
-        regions = request.form.getlist("regions")
-        countries = request.form.getlist("countries")
-        schools = request.form.getlist("schools")
+        selected_regions = request.form.getlist("regions")
+        selected_countries = request.form.getlist("countries")
+        selected_schools = request.form.getlist("schools")
 
         # Select all regions by default
         error = ''
-        if not regions+countries+schools:
+        if not selected_regions+selected_countries+selected_schools:
             error = 'NOTE: All regions selected by default'
-            regions = ['Americas', 'Asia', 'Europe', 'Oceania', 'Africa']
+            selected_regions = ['Americas', 'Asia', 'Europe', 'Oceania', 'Africa']
 
         output_dict = {}
         input_dict = {'Ess_nus_codes': essentialModules, 'Op_nus_codes': optionalModules}
 
-        if len(regions) > 0:
+        if len(selected_regions) > 0:
             input_dict['Location_type'] = 'regions'
-            input_dict['Location'] = regions
+            input_dict['Location'] = selected_regions
             output_dict1 = Algo.main(input_dict)
             output_dict = dict_merger(output_dict,output_dict1)
 
-        if len(countries) > 0:
+        if len(selected_countries) > 0:
             input_dict['Location_type'] = 'countries'
-            input_dict['Location'] = countries
+            input_dict['Location'] = selected_countries
             output_dict2 = Algo.main(input_dict)
             output_dict = dict_merger(output_dict,output_dict2)
 
-        if len(schools) > 0:
+        if len(selected_schools) > 0:
             input_dict['Location_type'] = 'universities'
-            input_dict['Location'] = schools
+            input_dict['Location'] = selected_schools
             output_dict3 = Algo.main(input_dict)
             output_dict = dict_merger(output_dict,output_dict3)
 
         # To ensure the regions appear in same order in the results
-        order_of_regions = ['Americas', 'Asia', 'Europe', 'Oceania', 'Africa']
         list_of_regions = []
         output_regions = list(output_dict.keys())
         for i in range(len(order_of_regions)):
@@ -106,8 +129,11 @@ def index():
             for uni in country_first_dict[country]:
                 str_nusmods[uni] = ', '.join(list(country_first_dict[country][uni].keys())[:-1])
         return render_template("picker.html", output_dict = country_first_dict, str_of_nusmods=str_nusmods,
-                           list_of_regions=list_of_regions, min=min, max=max, error = error,
-                           nus_code_title_dict=nus_code_title_dict)
+                                order_of_regions=order_of_regions, list_of_regions=list_of_regions, selected_regions=selected_regions,
+                                min=min, max=max, error = error,nus_code_title_dict=nus_code_title_dict,
+                                essentialModules=essentialModules,optionalModules=optionalModules,
+                                selected_countries=selected_countries,list_of_countries=list_of_countries,
+                                selected_schools=selected_schools,list_of_schools=list_of_schools)
 
 
 @app.route('/favicon.ico')

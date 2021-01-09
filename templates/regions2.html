@@ -15,7 +15,33 @@
         </button>
     </div>
     <div class="form-control-lg form-control">
-        <div class="form-check form-check-inline">
+      {% for region in order_of_regions %}
+        {% if region in selected_regions %}
+          <div class="form-check form-check-inline">
+              <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id={{region.lower()}}
+                  value={{region}}
+                  name="regions"
+                  checked=checked
+              />
+              <label class="form-check-label" for={{region.lower()}}>{{region}}</label>
+          </div>
+        {% else %}
+          <div class="form-check form-check-inline">
+              <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id={{region.lower()}}
+                  value={{region}}
+                  name="regions"
+              />
+              <label class="form-check-label" for={{region.lower()}}>{{region}}</label>
+          </div>
+        {% endif %}
+      {% endfor %}
+        <!-- <div class="form-check form-check-inline">
             <input
                 class="form-check-input"
                 type="checkbox"
@@ -64,7 +90,7 @@
                 name="regions"
             />
             <label class="form-check-label" for="africa">Africa</label>
-        </div>
+        </div> -->
     </div>
 
 

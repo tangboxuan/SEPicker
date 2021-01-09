@@ -1,3 +1,5 @@
+<!-- <p>{{selected_countries}}</p> -->
+
 <div class="form-group margin-bottom-med">
     <div class="form-group-prepend">
         <span class="form-group-text font-sz-mid">Countries:</span>
@@ -18,7 +20,14 @@
         name="countries"
         id="countries"
     >
-        <option class="font-sz-mid">Australia</option>
+    {% for country in list_of_countries %}
+      {% if country in selected_countries %}
+        <option class="font-sz-mid" selected>{{country}}</option>
+      {% else %}
+        <option class="font-sz-mid">{{country}}</option>
+      {% endif %}
+    {% endfor %}
+        <!-- <option class="font-sz-mid">Australia</option>
         <option class="font-sz-mid">Austria</option>
         <option class="font-sz-mid">Belgium</option>
         <option class="font-sz-mid">Canada</option>
@@ -71,7 +80,7 @@
             >United States of America</option
         >
         <option class="font-sz-mid">Australia</option>
-        <option class="font-sz-mid">Austria</option>
+        <option class="font-sz-mid">Austria</option> -->
     </select>
 
 </div>
