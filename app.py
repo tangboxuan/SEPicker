@@ -238,10 +238,9 @@ def department():
         return render_template("department.html")
     else:
         departments = request.form.getlist("department")
-        level = request.form.getlist("year")
         d = {}
         for i in range(len(departments)):
-            d[departments[i]] = int(level[i])
+            d[departments[i]] = 'placeholder'
         input_dict = {'Location_type': 'regions','Location':['Asia'],'Departments': d}
         display = Algo_module_codes.main(input_dict)
         return render_template("department.html", display=display,tmp=input_dict)
