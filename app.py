@@ -1,6 +1,7 @@
 import os
 from flask import Flask, redirect, render_template, request, send_from_directory
 from static import Algo
+from static import Algo_module_codes
 
 app = Flask(__name__)
 
@@ -231,9 +232,19 @@ def sub_search():
                                 selected_schools=selected_schools,list_of_schools=list_of_schools)
 
 
-@app.route('/department')
+@app.route('/department', methods=["GET", "POST"])
 def department():
-    return render_template("department.html")
+    if request.method == "GET":
+        return render_template("department.html")
+    else:
+        departments = request.form.getlist("department")
+        level = request.form.getlist("year")
+        d = {}
+        for i in range(len(departments)):
+            d[departments[i]] = int(level[i])
+        input_dict = {'Location_type': 'regions','Location':['Asia'],'Departments': d}
+        display = Algo_module_codes.main(input_dict)
+        return render_template("department.html", display=display,tmp=input_dict)
 
 
 @app.route('/favicon.ico')

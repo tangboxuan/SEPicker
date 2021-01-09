@@ -1,18 +1,11 @@
 {%extends "layout.html"%}
 {%block tite%}Search by Department{%endblock%}
 {%block main%}
+<h1>UNDER DEVELOPMENT</h1>
+<form action="/department" method="post">
 <div class="form-group margin-bottom-med">
     <div class="form-group-prepend">
-        <span class="form-group-text font-sz-mid">Schools:</span>
-        <button
-            class="btn-tertiary margin-bottom-sm"
-            type="button"
-            onClick="clearSchool()"
-        >
-            <span class="form-group-text">
-                Clear
-            </span>
-        </button>
+        <span class="form-group-text font-sz-mid">Departments:</span>
     </div>
     <select
         class="selectpicker form-control-lg form-control"
@@ -78,6 +71,7 @@
 <option class="font-sz-mid">UD</option>
 
     </select>
+    <span class="form-group-text font-sz-mid">Year:</span>
     <select
         class="selectpicker form-control-lg form-control"
         name="year"
@@ -90,5 +84,14 @@
 
     </select>
 
+<button
+class="btn-primary margin-top-med"
+type="submit"
+>
+Calculate
+</button>
 </div>
+</form>
+{{display}}
+{{tmp}}
 {%endblock%}
