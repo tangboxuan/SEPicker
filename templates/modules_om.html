@@ -1,7 +1,0 @@
-{% for code in nus_code_title_dict %}
-  {% if code in optionalModules %}
-    <option class="font-sz-mid" selected>{{code + " " + nus_code_title_dict[code]}}</option>
-  {% else %}
-    <option class="font-sz-mid">{{code + " " + nus_code_title_dict[code]}}</option>
-  {% endif %}
-{% endfor %}
