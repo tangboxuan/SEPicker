@@ -240,6 +240,11 @@ def department():
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
+@app.route('/plans')
+def plans():
+    return render_template("plans.html")
+
+
 
 if __name__ == "__main__":
     # port = int(os.environ.get("PORT", 5000))
