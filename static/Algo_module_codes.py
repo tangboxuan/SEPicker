@@ -29,9 +29,9 @@ def main(input_dict):
     else:
         raise ValueError("Value of Location_type MUST be either 'regions', 'countries' or 'universities'")
     departments = list(input_dict['Departments'].keys())
-    truthy = (areas['Department 1'] == departments[0]) & (areas['Level'] == input_dict['Departments'][departments[0]])
+    truthy = (areas['Department 1'] == departments[0]) # & (areas['Level'] == input_dict['Departments'][departments[0]])
     for key in departments[1:]:
-        truthy = truthy | (areas['Department 1'] == key) & (areas['Level'] == input_dict['Departments'][key])
+        truthy = truthy | (areas['Department 1'] == key) # & (areas['Level'] == input_dict['Departments'][key])
     levels = areas[truthy]
 
     unique_unis = np.unique(levels['Partner University'])
