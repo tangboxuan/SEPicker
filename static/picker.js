@@ -127,3 +127,15 @@ function removeFavourite(el){
     var par = document.getElementById(el.id);
     par.parentNode.removeChild(par);
 }
+
+function clearDP(){
+    var textbox = document.getElementById("department");
+    var collection = textbox.getElementsByTagName("option");
+
+    for (var i = 0; i < collection.length; i++) {
+        collection[i].selected = false;
+    }
+
+    var text = document.getElementsByClassName("filter-option-inner-inner")[0];
+    text.innerHTML = "<span style='color:#999'>Nothing selected</span>";
+}

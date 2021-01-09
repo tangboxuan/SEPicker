@@ -241,9 +241,29 @@ def department():
         d = {}
         for i in range(len(departments)):
             d[departments[i]] = 'placeholder'
-        input_dict = {'Location_type': 'regions','Location':['Asia'],'Departments': d}
+        input_dict = {'Location_type': 'regions','Location':['Americas', 'Asia', 'Europe', 'Oceania', 'Africa'],'Departments': d}
         display = Algo_module_codes.main(input_dict)
-        return render_template("department.html", display=display,tmp=input_dict)
+        list_for_n_mods = []
+        counter = 0
+        for region in display:
+            for country in display[region]:
+                for uni in display[region][country]:
+                    list_for_n_mods.append(display[region][country][uni]["n_mods"])
+                    counter += 1
+        min, max = 0,0
+        if len(list(set(list_for_n_mods))) > 0:
+            min =  list(set(list_for_n_mods))[0]
+            max = min
+            if len(list(set(list_for_n_mods))) > 1:
+                max = list(set(list_for_n_mods))[-1]
+        country_first_dict = {}
+        for region in display:
+            country_first_dict.update(display[region])
+        str_nusmods = {}
+        for country in country_first_dict:
+            for uni in country_first_dict[country]:
+                str_nusmods[uni] = ', '.join(list(country_first_dict[country][uni].keys())[:-1])
+        return render_template("department.html", min=min, max=max,output_dict=country_first_dict,tmp=input_dict,str_of_nusmods=str_nusmods,nus_code_title_dict=nus_code_title_dict)
 
 
 @app.route('/favicon.ico')

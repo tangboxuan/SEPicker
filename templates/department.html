@@ -1,85 +1,196 @@
 {%extends "layout.html"%}
 {%block tite%}Search by Department{%endblock%}
 {%block main%}
-<h1>UNDER DEVELOPMENT</h1>
-<form action="/department" method="post">
-<div class="form-group margin-bottom-med">
-    <div class="form-group-prepend">
-        <span class="form-group-text font-sz-mid">Departments:</span>
+<div class="dashboard">
+    <div class="search-form-container">
+        <!-- when the form is "open" add a "open" class -->
+        <div
+            class="search-form-collaspsible collapse show"
+            id="search-form-top"
+        >
+            <div class="search-form-title margin-bottom-med">
+                <span class="heading-primary">Picker by departments:</span>
+            </div>
+            <form action="/department" method="post">
+                <div class="form-group margin-bottom-med">
+                    <div class="form-group-prepend">
+                        <span class="form-group-text font-sz-mid">Departments:</span>
+                        <button
+                            class="btn-tertiary margin-bottom-sm"
+                            type="button"
+                            onClick="clearDP()"
+                        >
+                            <span class="form-group-text">
+                                Clear
+                            </span>
+                        </button>
+                    </div>
+                    <select
+                        class="selectpicker form-control-lg form-control font-sz-mid"
+                        multiple
+                        data-live-search="true"
+                        name="department"
+                        id="department">
+                        <option class="font-sz-mid">ACC</option>
+                        <option class="font-sz-mid">AH</option>
+                        <option class="font-sz-mid">AR</option>
+                        <option class="font-sz-mid">AX</option>
+                        <option class="font-sz-mid">BSE</option>
+                        <option class="font-sz-mid">BSN</option>
+                        <option class="font-sz-mid">BSP</option>
+                        <option class="font-sz-mid">BT</option>
+                        <option class="font-sz-mid">BXT</option>
+                        <option class="font-sz-mid">CG</option>
+                        <option class="font-sz-mid">CM</option>
+                        <option class="font-sz-mid">COS</option>
+                        <option class="font-sz-mid">CS</option>
+                        <option class="font-sz-mid">DAO</option>
+                        <option class="font-sz-mid">DBA</option>
+                        <option class="font-sz-mid">DOS</option>
+                        <option class="font-sz-mid">DSA</option>
+                        <option class="font-sz-mid">DSC</option>
+                        <option class="font-sz-mid">EG</option>
+                        <option class="font-sz-mid">EN</option>
+                        <option class="font-sz-mid">ENV</option>
+                        <option class="font-sz-mid">EU</option>
+                        <option class="font-sz-mid">EX</option>
+                        <option class="font-sz-mid">FIN</option>
+                        <option class="font-sz-mid">FST</option>
+                        <option class="font-sz-mid">GL</option>
+                        <option class="font-sz-mid">HY</option>
+                        <option class="font-sz-mid">IE</option>
+                        <option class="font-sz-mid">IFS</option>
+                        <option class="font-sz-mid">INVALID</option>
+                        <option class="font-sz-mid">IS</option>
+                        <option class="font-sz-mid">IT</option>
+                        <option class="font-sz-mid">LA</option>
+                        <option class="font-sz-mid">LAC</option>
+                        <option class="font-sz-mid">LAF</option>
+                        <option class="font-sz-mid">LAG</option>
+                        <option class="font-sz-mid">LAK</option>
+                        <option class="font-sz-mid">LAS</option>
+                        <option class="font-sz-mid">LAT</option>
+                        <option class="font-sz-mid">LSM</option>
+                        <option class="font-sz-mid">MA</option>
+                        <option class="font-sz-mid">ME</option>
+                        <option class="font-sz-mid">MKT</option>
+                        <option class="font-sz-mid">MNO</option>
+                        <option class="font-sz-mid">MT</option>
+                        <option class="font-sz-mid">NM</option>
+                        <option class="font-sz-mid">P</option>
+                        <option class="font-sz-mid">PC</option>
+                        <option class="font-sz-mid">PF</option>
+                        <option class="font-sz-mid">PR</option>
+                        <option class="font-sz-mid">PS</option>
+                        <option class="font-sz-mid">QF</option>
+                        <option class="font-sz-mid">ST</option>
+                        <option class="font-sz-mid">TR</option>
+                        <option class="font-sz-mid">TS</option>
+                        <option class="font-sz-mid">UD</option>
+
+                </select>
+                </div>
+                <button class="btn-primary margin-top-med" type="submit">
+                    Calculate
+                </button>
+            </form>
+
+
     </div>
-    <select
-        class="selectpicker form-control-lg form-control"
-        multiple
-        data-live-search="true"
-        name="department"
-        id="department">
-        <option class="font-sz-mid">ACC</option>
-<option class="font-sz-mid">AH</option>
-<option class="font-sz-mid">AR</option>
-<option class="font-sz-mid">AX</option>
-<option class="font-sz-mid">BSE</option>
-<option class="font-sz-mid">BSN</option>
-<option class="font-sz-mid">BSP</option>
-<option class="font-sz-mid">BT</option>
-<option class="font-sz-mid">BXT</option>
-<option class="font-sz-mid">CG</option>
-<option class="font-sz-mid">CM</option>
-<option class="font-sz-mid">COS</option>
-<option class="font-sz-mid">CS</option>
-<option class="font-sz-mid">DAO</option>
-<option class="font-sz-mid">DBA</option>
-<option class="font-sz-mid">DOS</option>
-<option class="font-sz-mid">DSA</option>
-<option class="font-sz-mid">DSC</option>
-<option class="font-sz-mid">EG</option>
-<option class="font-sz-mid">EN</option>
-<option class="font-sz-mid">ENV</option>
-<option class="font-sz-mid">EU</option>
-<option class="font-sz-mid">EX</option>
-<option class="font-sz-mid">FIN</option>
-<option class="font-sz-mid">FST</option>
-<option class="font-sz-mid">GL</option>
-<option class="font-sz-mid">HY</option>
-<option class="font-sz-mid">IE</option>
-<option class="font-sz-mid">IFS</option>
-<option class="font-sz-mid">INVALID</option>
-<option class="font-sz-mid">IS</option>
-<option class="font-sz-mid">IT</option>
-<option class="font-sz-mid">LA</option>
-<option class="font-sz-mid">LAC</option>
-<option class="font-sz-mid">LAF</option>
-<option class="font-sz-mid">LAG</option>
-<option class="font-sz-mid">LAK</option>
-<option class="font-sz-mid">LAS</option>
-<option class="font-sz-mid">LAT</option>
-<option class="font-sz-mid">LSM</option>
-<option class="font-sz-mid">MA</option>
-<option class="font-sz-mid">ME</option>
-<option class="font-sz-mid">MKT</option>
-<option class="font-sz-mid">MNO</option>
-<option class="font-sz-mid">MT</option>
-<option class="font-sz-mid">NM</option>
-<option class="font-sz-mid">P</option>
-<option class="font-sz-mid">PC</option>
-<option class="font-sz-mid">PF</option>
-<option class="font-sz-mid">PR</option>
-<option class="font-sz-mid">PS</option>
-<option class="font-sz-mid">QF</option>
-<option class="font-sz-mid">ST</option>
-<option class="font-sz-mid">TR</option>
-<option class="font-sz-mid">TS</option>
-<option class="font-sz-mid">UD</option>
-
-    </select>
-
-<button
-class="btn-primary margin-top-med"
-type="submit"
->
-Calculate
-</button>
+    <div
+        class="btn-collaspsible__up"
+        data-toggle="collapse"
+        data-target="#search-form-top"
+    >
+        <i class="fas fa-arrows-alt-v"></i>
+    </div>
 </div>
-</form>
-{{display}}
-{{tmp}}
+
+
+<!-- main container -->
+<div class="main-container">
+    {%for country in output_dict%}
+    <div class="country-item ">
+        <div
+            onClick="onCountryClick(this)"
+            class="country-item__title"
+            id="{{''.join(country.split()).lower()}}"
+            style="cursor: pointer;"
+        >
+            <span class="heading-primary">{{country}}</span>
+        </div>
+        <div
+            class="pus-container"
+            id="{{''.join(country.split()).lower() + '-pus'}}"
+        >
+            {% for i in range(max, min-1, -1) %} {% for uni in
+            output_dict[country] %} {% if
+            output_dict[country][uni]["n_mods"] == i %}
+
+            <div class="pu-item">
+                <div
+                    class="pu-item__title"
+                    data-toggle="collapse"
+                    data-target="{{'#' + ''.join(uni.split()).lower()}}"
+                    style="cursor: pointer;"
+                >
+                    <span class="heading-primary smaller">{{uni}}</span
+                    ><span class="badge badge-secondary badge-primary"
+                        >{{output_dict[country][uni]["n_mods"]}}</span
+                    >
+                </div>
+
+                <div
+                    class="pu-item__sm-modules-container collaspe show"
+                    id="{{''.join(uni.split()).lower()}}"
+                >
+
+                    {{str_of_nusmods[uni]}}
+                    <i
+                                class="fas fa-star"
+                                onClick="togglePlan({{output_dict[country][uni]}},'{{uni}}',this)"
+                            ></i>
+                </div>
+                <div
+                    class="pu-item__mappings collapse"
+                    id="{{''.join(uni.split()).lower()}}"
+                >
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%">NUS</th>
+                                <th style="width: 50%">
+                                    Partner University
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for nusmod in output_dict[country][uni] %} {%
+                            if nusmod != "n_mods" %}
+                            <tr>
+                                <td class="hello-world">
+                                    {{nusmod.upper()}}<br /><span
+                                        class="description"
+                                        >{{nus_code_title_dict[nusmod]}}
+                                    </span>
+                                </td>
+                                <td>
+                                    {{output_dict[country][uni][nusmod]["PU Module Code"]}}<br />
+                                    <span class="description"
+                                        >{{output_dict[country][uni][nusmod]["PU Module Title"].title()}}
+                                    </span>
+                                </td>
+                            </tr>
+                            {% endif %}{% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            {% endif %} {% endfor %} {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<script src="static/picker.js"></script>
 {%endblock%}

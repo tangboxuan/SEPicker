@@ -54,4 +54,5 @@ def main(input_dict):
             PU_title = row['PU Module 1 Title'].iloc[0]
             PU_code = row['PU Module 1'].iloc[0]
             output_dict[region][country][uni][module] = {'PU Module Title': PU_title, 'PU Module Code': PU_code}
+        output_dict[region][country][uni]['n_mods'] = len(output_dict[region][country][uni])
     return output_dict
