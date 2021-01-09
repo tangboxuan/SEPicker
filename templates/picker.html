@@ -199,6 +199,10 @@ main %} {% if error %}
     </div>
 
     <!-- main container -->
+    {% if output_dict =={} %}
+    <br>
+    <h2> No school maps all essential modules!</h2>
+    {% else %}
     <div class="main-container">
         {%for country in output_dict%}
         <div class="country-item ">
@@ -222,7 +226,7 @@ main %} {% if error %}
                     <div
                         class="pu-item__title"
                         data-toggle="collapse"
-                        data-target="{{'#' + ''.join(uni.split()).lower()}}"
+                        data-target="{{'#' + ''.join(school_mappings[uni].lower().split())}}"
                         style="cursor: pointer;"
                     >
                         <span class="heading-primary smaller">{{uni}}</span
@@ -233,7 +237,7 @@ main %} {% if error %}
 
                     <div
                         class="pu-item__sm-modules-container collaspe show"
-                        id="{{''.join(uni.split()).lower()}}"
+                        id="{{''.join(school_mappings[uni].lower().split())}}"
                     >
                         <!-- could be sus -->
                         {{str_of_nusmods[uni]}}
@@ -244,7 +248,7 @@ main %} {% if error %}
                     </div>
                     <div
                         class="pu-item__mappings collapse"
-                        id="{{''.join(uni.split()).lower()}}"
+                        id="{{''.join(school_mappings[uni].lower().split())}}"
                     >
                         <table class="table ">
                             <thead>
@@ -283,6 +287,7 @@ main %} {% if error %}
         </div>
         {% endfor %}
     </div>
+    {% endif %}
     <script src="static/picker.js"></script>
     {% endblock %}
 </div>

@@ -129,12 +129,15 @@ def index():
         for country in country_first_dict:
             for uni in country_first_dict[country]:
                 str_nusmods[uni] = ', '.join(list(country_first_dict[country][uni].keys())[:-1])
+        school_mappings = {};
+        for school in list_of_schools:
+            school_mappings[school] = "".join(u for u in school if u not in ("?", ".", ";", ":", "!","'", ","))
         return render_template("picker.html", output_dict = country_first_dict, str_of_nusmods=str_nusmods,
                                 order_of_regions=order_of_regions, selected_regions=selected_regions,
                                 min=min, max=max, error = error,nus_code_title_dict=nus_code_title_dict,
                                 essentialModules=essentialModules,optionalModules=optionalModules,
                                 selected_countries=selected_countries,list_of_countries=list_of_countries,
-                                selected_schools=selected_schools,list_of_schools=list_of_schools)
+                                selected_schools=selected_schools,list_of_schools=list_of_schools, school_mappings=school_mappings)
 
 
 @app.route("/sub_search", methods=["GET", "POST"])
@@ -277,6 +280,6 @@ def plans():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
-    # app.run(debug=True)
+    # port = int(os.environ.get("PORT", 5000))
+    # app.run(host="0.0.0.0", port=port)
+    app.run(debug=True)
